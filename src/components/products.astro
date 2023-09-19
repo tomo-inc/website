@@ -1,0 +1,50 @@
+---
+import CenterContainer from "./centerContainer.astro";
+
+const productList = [
+  {
+    title: "Share video to web3",
+    icon: "/images/video-to-web3.svg",
+    desc: "Publish videos to the Web3 world; TikTok, instagram, YouTube account one-click authentication login, so that your influence can be transferred to the new platform immediately",
+  },
+  {
+    title: "Proof of supporting",
+    icon: "/images/proof.svg",
+    desc: "On the platform, each user can sell their own pass, and only with their own pass can a conversation be established; relying on this proof of support, we can not only establish contact with interested objects, but also build a more effective fan base, Rely on credentials to launch campaigns, proposals, etc.",
+  },
+  {
+    title: "Fan sharing economy",
+    icon: "/images/economy.svg",
+    desc: "We have designed a fan sharing economy, find a good video creator, hold the pass to become a top fan, the fans' spontaneous promotion will make the video more popular, and the fans can also share the revenue obtained from the video",
+  },
+];
+---
+
+<div id="products"></div>
+<main class="w-full mt-[-100px] px-6 sm:px-0 sm:mt-[90px]">
+  <CenterContainer>
+    <div
+      class="font-['NeueHaas'] text-[32px] md:text-[52px] tracking-3.2 leading-[60px] text-center mb-[20px]"
+    >
+      Products
+    </div>
+    <div class="flex flex-col justify-between gap-4 md:flex-row w-full">
+      {
+        productList.map((item, index) => (
+          <div
+            class="flex-1 flex flex-col gap-5 justify-between font-['NeueHaas'] leading-[150%] bg-gray rounded-3xl px-7 pt-7"
+            data-aos="fade-up"
+          >
+            <div class="text-2xl font-[450] tracking-1.2 font-['NeueHaas'] text-black text-center leading-[125%]">
+              {item.title}
+            </div>
+            <div class="sm:mx-8 text-sm tracking-0.7 font-['NeueHaas'] text-black text-center leading-[150%]">
+              {item.desc}
+            </div>
+            <img class="w-full" src={item.icon} alt="" />
+          </div>
+        ))
+      }
+    </div>
+  </CenterContainer>
+</main>

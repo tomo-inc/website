@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "NeueHaas";
+  src: url("./fonts/NHaasGroteskDSPro-45Lt.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NeueHaas500";
+  src: url("./fonts/NHaasGroteskDSPro-55Rg.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NeueHaasBold";
+  src: url("./fonts/NHaasGroteskDSPro-65Md.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
