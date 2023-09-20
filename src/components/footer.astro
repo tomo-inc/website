@@ -5,7 +5,7 @@ import CenterContainer from "./centerContainer.astro";
 ---
 
 <main
-  class="w-full mb-[20px] md:mb-[65px] mt-[30px] sm:mt-[50px] md:mt-[60px] px-6 sm:px-0"
+  class="w-full pb-[20px] md:pb-[65px] mt-[30px] sm:mt-[50px] md:mt-[60px] px-6 sm:px-0 bg-bgFooter bg-no-repeat back-style"
 >
   <CenterContainer class="flex flex-col gap-[16px]">
     <div
@@ -145,3 +145,9 @@ import CenterContainer from "./centerContainer.astro";
     </div>
   </CenterContainer>
 </main>
+<style>
+  .back-style {
+    background-position: 0 0;
+    background-size: 100% 100%;
+  }
+</style>
