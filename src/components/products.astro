@@ -3,28 +3,32 @@ import CenterContainer from "./centerContainer.astro";
 
 const productList = [
   {
-    title: "Share video to web3",
-    icon: "/images/video-to-web3.png",
-    desc: "Publish videos to the Web3 world; TikTok, instagram, YouTube account one-click authentication login, so that your influence can be transferred to the new platform immediately",
+    title: "Vote & Pass Mechanism",
+    icon: "/images/mechanism.png",
+    firstText: "Experience the power of support on Tomo. ",
+    desc: "On Tomo, users show their support for an influencer by holding his/her Votes. As ones voter base grows, it’s increasingly attractive for the influencer to join the platform and distribute the rewards among all the voters. Once an influencer is verified on Tomo, their vote automatically upgrades to a pass. This unlocks the ability for Pass holders to send direct messages and gain access to an exclusive prize pool.",
   },
   {
     title: "Proof of supporting",
     icon: "/images/proof.png",
-    desc: "On the platform, each user can sell their own pass, and only with their own pass can a conversation be established; relying on this proof of support, we can not only establish contact with interested objects, but also build a more effective fan base, Rely on credentials to launch campaigns, proposals, etc.",
+    firstText:
+      "Forge lasting connections with Tomo’s Proof of Supporting Mechanism. ",
+    desc: "By holding a Vote or Pass, a blockchain-based contract is established between the follower and influencer, ensuring future interactions and shared profits.",
   },
   {
-    title: "Fan sharing economy",
+    title: "Followership Sharing Economy",
     icon: "/images/economy.png",
-    desc: "We have designed a fan sharing economy, find a good video creator, hold the pass to become a top fan, the fans' spontaneous promotion will make the video more popular, and the fans can also share the revenue obtained from the video",
+    firstText: "Redefining profit-Sharing with Tomo. ",
+    desc: "We challenge the traditional followership model where influencers are the sole beneficiaries of profit, leaving their dedicated followers unrewarded. At Tomo, influencers and followers collaborate to maximize and share their earnings.",
   },
 ];
 ---
 
 <div id="products"></div>
-<main class="w-full mt-[-100px] px-6 sm:px-0 sm:mt-[90px]">
+<main class="w-full mt-[-120px] sm:mt-[100px] px-6 sm:px-0">
   <CenterContainer>
     <div
-      class="font-['NeueHaas'] text-[32px] md:text-[52px] tracking-3.2 leading-[60px] text-center mb-[20px]"
+      class="font-['NeueHaas'] text-[32px] md:text-[52px] tracking-3.2 leading-[60px] text-center mb-[20px] sm:mb-[65px]"
     >
       Products
     </div>
@@ -38,7 +42,8 @@ const productList = [
             <div class="text-2xl font-[450] tracking-1.2 font-['NeueHaas'] text-black text-center leading-[125%]">
               {item.title}
             </div>
-            <div class="sm:mx-8 text-sm tracking-0.7 font-['NeueHaas'] text-black text-center leading-[150%]">
+            <div class="sm:mx-[10px] text-sm tracking-[0.2px] font-['NeueHaas'] text-black leading-[150%]">
+              <span class="font-['NeueHaasBold']">{item.firstText}</span>
               {item.desc}
             </div>
             <img class="w-full" src={item.icon} alt="" />
