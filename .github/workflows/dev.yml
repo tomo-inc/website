@@ -1,0 +1,16 @@
+name:
+  deploy-dev
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: webhook
+        run: curl -X POST -H 'X-Github-Token:${{ secrets.WEBHOOK }}' http://webhook.tomo.inc/webhook
