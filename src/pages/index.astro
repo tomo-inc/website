@@ -7,14 +7,13 @@ import Products from "../components/products.astro";
 import Erc4337 from "../components/erc4337.astro";
 import OurPartners from "../components/ourPartners.astro";
 import Footer from "../components/footer.astro";
-import Team from "../components/team.astro";
 
 import DiscovreGreatThings from "../components/discover-great-things.astro";
 import "../fonts.css";
 ---
 
 <Layout title="Tomo - Next Gen Social Platform">
-  <div class="back-style md:bg-bgDesktop bg-bgMobile bg-no-repeat">
+  <div class="back-style sm:bg-bgDesktop bg-bgMobile bg-no-repeat">
     <Navbar />
     <Container class="flex flex-col">
       <Hero />
@@ -37,7 +36,7 @@ import "../fonts.css";
 
 <style>
   .back-style {
-    background-position: 0 0;
-    background-size: 100%;
+    background-position: 0 0, 100% 100%;
+    background-size: 100%, 100%;
   }
 </style>

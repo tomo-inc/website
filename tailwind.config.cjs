@@ -42,10 +42,9 @@ module.exports = {
         64: "64px",
       },
       backgroundImage: {
-        header: 'url("/images/bg-hero.jpg")',
-        bgDesktop: "url('/images/bg-hero.jpg')",
-        bgMobile: "url('/images/mobile-bg-hero.jpg')",
-        bgFooter: "url('/images/bg-footer.jpg')",
+        bgDesktop: "url('/images/bg-hero.jpg'), url('/images/bg-footer.jpg')",
+        bgMobile:
+          "url('/images/mobile-bg-hero.jpg'), url('/images/bg-footer.jpg')",
       },
     },
   },

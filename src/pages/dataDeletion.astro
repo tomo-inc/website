@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CenterContainer from "../components/centerContainer.astro";
+import Footer from "../components/footer.astro";
+---
+
+<Layout title="terms">
+  <CenterContainer
+    class="px-6 mt-[50px] md:mt-[80px] flex flex-col font-['NeueHaas'] tracking-0.7"
+  >
+    <h3 class="text-[26px] text-center font-medium">
+      Data Deletion Instruction
+    </h3>
+    <div class="text-[14px] text-center mt-[12px] text-[#00000073] mb-[50px]">
+      Last Updated: August 21, 2023
+    </div>
+    <div class="my-2 text-[16px] font-normal font-['NeueHaasBold'] leading-6">
+      Tomo does not save your personal data on our server. If you want to delete
+      your activities for the Tomo, following these instructions:
+    </div>
+    <div class="text-[16px] my-2 font-['NeueHaas']">
+      1. Go to your Tomo app profile page.
+    </div>
+    <div class="text-[16px] my-2 font-['NeueHaas']">
+      2. Click the More button in the upper right corner.
+    </div>
+    <div class="text-[16px] my-2 font-['NeueHaas']">
+      3. Click " Remove Account"
+    </div>
+    <div class="text-[16px] my-2 font-['NeueHaas']">
+      4. Click " Confirm Delete" button.
+    </div>
+    <img class="w-full" src="/images/we-chat.jpg" alt="" />
+  </CenterContainer>
+  <Footer />
+</Layout>
