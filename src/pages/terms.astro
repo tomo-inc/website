@@ -5,6 +5,12 @@ import Footer from "../components/footer.astro";
 import "../fonts.css";
 ---
 
+<script>
+  document
+    .getElementById("tomoLink")
+    .setAttribute("href", `${location.origin}/terms`);
+  document.getElementById("tomoLink").innerHTML = `${location.origin}/terms`;
+</script>
 <Layout title="terms">
   <CenterContainer
     class="px-6 mt-[50px] md:mt-[80px] flex flex-col font-['NeueHaas'] tracking-0.7"
@@ -21,16 +27,14 @@ import "../fonts.css";
       accounts, and allowing ordinary websites and applications to interact with
       blockchain networks, while keeping the user in control over what
       transactions they approve, through our website located at <a
+        id="tomoLink"
         target="_blank"
-        href=" https://tomo.inc"
-        class="text-[#42C37B]"
-        >https://tomo.inc
-      </a> and browser plugin (the “Site”) and mobile application (the “App”), which
-      includes text, images, audio, code and other materials (the “Content”) and
-      all of the features, and services provided. The Site, the App and any other
-      features, tools, materials, or other services offered from time to time by
-      Tomo are referred to here as the “Service.” Please read these Terms of Use
-      (the “Terms”) carefully before using the Service.
+        class="text-[#42C37B]"></a> and browser plugin (the “Site”) and mobile application
+      (the “App”), which includes text, images, audio, code and other materials (the
+      “Content”) and all of the features, and services provided. The Site, the App
+      and any other features, tools, materials, or other services offered from time
+      to time by Tomo are referred to here as the “Service.” Please read these Terms
+      of Use (the “Terms”) carefully before using the Service.
     </div>
     <div class="my-2 text-[16px] font-normal font-['NeueHaas'] leading-6">
       By using or otherwise accessing the Services, or clicking to accept or
