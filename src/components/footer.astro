@@ -1,162 +1,30 @@
 ---
 import CenterContainer from "./centerContainer.astro";
 ---
+
 <script>
   document
-    .getElementById("termsLink1")
+    .getElementById("termsLink")
     .setAttribute("href", `${location.origin}/terms`);
   document
-    .getElementById("privacyLink1")
-    .setAttribute("href", `${location.origin}/privacy`);
-  document
-    .getElementById("termsLink2")
-    .setAttribute("href", `${location.origin}/terms`);
-  document
-    .getElementById("privacyLink2")
+    .getElementById("privacyLink")
     .setAttribute("href", `${location.origin}/privacy`);
 </script>
-<main class="w-full pb-[20px] md:pb-[65px] mt-[30px] md:mt-[60px] px-6 md:px-0">
+<main class="w-full pb-[64px] md:mt-[100px] px-6 md:px-0 relative">
   <CenterContainer class="flex flex-col gap-[16px]">
     <div
-      class="flex !flex-col md:!flex-row gap-[32px] md:gap-[50px] md:justify-between"
+      class="w-full flex items-center justify-center gap-[8.5px] text-pink font-['NeueHaas'] text-sm leading-[18px] tracking-0.7 font-[450] absolute top-[-30px] left-0"
     >
-      <div
-        class="flex flex-col justify-start font-['NeueHaas'] text-base text-normal gap-[20px]"
-      >
-        <div class="flex w-full lg:w-auto items-center justify-between">
-          <a href="/" class="text-lg flex items-center">
-            <img class="w-[44px] h-[32px]" src="/images/logo.svg" alt="" />
-            <span
-              class="font-['NeueHaas'] pl-1.5 text-normal text-[20px] tracking-3"
-              >TOMO</span
-            >
-          </a>
-        </div>
-        <div
-          class="flex flex-col gap-[15px] text-sm text-normal leading-[22px] tracking-0.7 font-['NeueHaas']"
-        >
-          <div>
-            Transforming How Influencers and <br />Followers Connect in Web3.
-          </div>
-          <a
-            class="flex items-center gap-[10px] w-fi hover:text-pink"
-            target="_blank"
-            href=""
-          >
-            Go to app
-            <img
-              class="cursor-pointer w-4 h-4"
-              src="/images/out-arrow.svg"
-              alt=""
-            />
-          </a>
-        </div>
-      </div>
-      <div class="flex gap-[35px] md:gap-[80px] items-start">
-        <div class="flex flex-col gap-[20px] font-['NeueHaas']">
-          <div
-            class="mb-[4px] text-sm text-normal leading-[18px] tracking-0.7 font-['NeueHaasBold']"
-          >
-            TOMO
-          </div>
-          <a
-            target="_blank"
-            href=""
-            class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
-          >
-            Products
-          </a>
-          <div
-            class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
-          >
-            Our partners
-          </div>
-          <div
-            class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
-          >
-            Team
-          </div>
-        </div>
-        <div class="flex flex-col gap-[20px] font-['NeueHaas']">
-          <div
-            class="mb-[4px] text-sm text-normal leading-[18px] tracking-0.7 font-['NeueHaasBold']"
-          >
-            For Developers
-          </div>
-          <div
-            class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
-          >
-            Forum
-          </div>
-          <div
-            class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
-          >
-            Snapshot
-          </div>
-          <div
-            class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
-          >
-            Docs
-          </div>
-        </div>
-        <div class="flex flex-col gap-[20px] font-['NeueHaas']">
-          <div
-            class="mb-[4px] text-sm text-normal leading-[18px] tracking-0.7 font-['NeueHaasBold']"
-          >
-            Resources
-          </div>
-          <div
-            class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
-          >
-            Medium
-          </div>
-          <div
-            class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
-          >
-            Telegram
-          </div>
-          <div
-            class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
-          >
-            X
-          </div>
-        </div>
-        <div class="flex-col gap-[20px] font-['NeueHaas'] hidden md:flex">
-          <div
-            class="mb-[4px] text-sm text-normal leading-[18px] tracking-0.7 font-['NeueHaasBold']"
-          >
-            Legal
-          </div>
-          <a
-            id="termsLink1"
-            target="_blank"
-            class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
-          >
-            Terms of Service
-          </a>
-          <a
-            id="privacyLink1"
-            target="_blank"
-            class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
-          >
-            Privacy Policy
-          </a>
-        </div>
-      </div>
-    </div>
-    <div
-      class="w-full flex items-center justify-center gap-[8.5px] md:hidden text-pink font-['NeueHaas'] text-sm leading-[18px] tracking-0.7 font-[450]"
-    >
-      <a id="termsLink2" class="cursor-pointer" target="_blank"
+      <a id="termsLink" class="cursor-pointer" target="_blank"
         >Terms of Service</a
       >
       <span class="inline-block w-[1px] h-[12px] bg-pink"></span>
-      <a id="privacyLink2" class="cursor-pointer" target="_blank"
+      <a id="privacyLink" class="cursor-pointer" target="_blank"
         >Privacy Policy</a
       >
     </div>
     <div
-      class="text-center w-full text-sm text-normal leading-[18px] tracking-0.7 font-['NeueHaas'] md:mt-[120px]"
+      class="text-center w-full text-sm text-normal leading-[18px] tracking-0.7 font-['NeueHaas']"
     >
       Copyright: @2023 Unyx Inc. All Rights Reserved.
     </div>

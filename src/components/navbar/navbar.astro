@@ -1,76 +1,25 @@
 ---
 import CenterContainer from "../centerContainer.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
-
-const menuitems = [
-  {
-    title: "Products",
-    scrollTo: "scrollTo",
-    value: "products",
-  },
-  {
-    title: "ERC-4337",
-    scrollTo: "",
-    value: "erc-4337",
-  },
-  {
-    title: "Our Partners",
-    scrollTo: "",
-    value: "our-partners",
-  },
-  // {
-  //   title: "Team",
-  //   scrollTo: "",
-  //   value: "team",
-  // },
-];
-
-const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname.slice(1);
 ---
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function () {
-      var height = document.querySelector(".first-container").clientHeight;
-      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (window.innerWidth < 769) {
+        var height = document.querySelector(".first-container").clientHeight;
+        var scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-      var navContainer = document.querySelector(".nav-container");
+        var navContainer = document.querySelector(".nav-container");
 
-      if (scrollTop >= height - 40) {
-        navContainer.classList.add("bg-white", "drop-shadow-lg");
-      } else {
-        navContainer.classList.remove("bg-white", "drop-shadow-lg");
+        if (scrollTop >= height - 40) {
+          navContainer.classList.add("bg-white", "drop-shadow-lg");
+        } else {
+          navContainer.classList.remove("bg-white", "drop-shadow-lg");
+        }
       }
     });
   });
-
-  const scrollTo = (id) => {
-    let anchorElement = document.getElementById(id);
-    if (anchorElement) {
-      anchorElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const scrollToProductsButton = document.getElementById("products-button");
-
-  scrollToProductsButton.addEventListener("click", () => scrollTo("products"));
-
-  const scrollToERCButton = document.getElementById("erc-4337-button");
-
-  scrollToERCButton.addEventListener("click", () => scrollTo("erc-4337"));
-
-  const scrollToOurPartnersButton = document.getElementById(
-    "our-partners-button"
-  );
-
-  scrollToOurPartnersButton.addEventListener("click", () =>
-    scrollTo("our-partners")
-  );
-
-  const scrollToTeamButton = document.getElementById("team-button");
-
-  scrollToTeamButton.addEventListener("click", () => scrollTo("team"));
 </script>
 
 <header
@@ -89,26 +38,6 @@ const currentPath = pathname.slice(1);
           >
         </a>
       </div>
-
-      <MenuItems
-        class="hidden w-full md:w-auto mt-2 md:flex md:mt-0 text-base leading-[22px] text-[#010639] tracking-[0.5px] font-bold"
-      >
-        <ul class="flex flex-col md:flex-row md:gap-[30px]">
-          {
-            menuitems.map((item, index) => (
-              <li>
-                <button
-                  id={item.value + "-button"}
-                  onclick={item.scrollTo}
-                  class={`flex lg:px-3 py-2.5 cursor-pointer font-['NeueHaas'] text-[#1F2024] tracking-[0.7px] hover:text-[#8967E7] justify-end`}
-                >
-                  {item.title}
-                </button>
-              </li>
-            ))
-          }
-        </ul>
-      </MenuItems>
     </Astronav>
   </CenterContainer>
 </header>
