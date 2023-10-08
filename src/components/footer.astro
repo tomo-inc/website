@@ -4,9 +4,21 @@ import Link from "./ui/link.astro";
 import CenterContainer from "./centerContainer.astro";
 ---
 
-<main
-  class="w-full pb-[20px] md:pb-[65px] mt-[30px] md:mt-[60px] px-6 md:px-0"
->
+<script>
+  document
+    .getElementById("termsLink1")
+    .setAttribute("href", `${location.origin}/terms`);
+  document
+    .getElementById("privacyLink1")
+    .setAttribute("href", `${location.origin}/privacy`);
+  document
+    .getElementById("termsLink2")
+    .setAttribute("href", `${location.origin}/terms`);
+  document
+    .getElementById("privacyLink2")
+    .setAttribute("href", `${location.origin}/privacy`);
+</script>
+<main class="w-full pb-[20px] md:pb-[65px] mt-[30px] md:mt-[60px] px-6 md:px-0">
   <CenterContainer class="flex flex-col gap-[16px]">
     <div
       class="flex !flex-col md:!flex-row gap-[32px] md:gap-[50px] md:justify-between"
@@ -119,15 +131,15 @@ import CenterContainer from "./centerContainer.astro";
             Legal
           </div>
           <a
+            id="termsLink1"
             target="_blank"
-            href="https://tomo.inc/terms"
             class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
           >
             Terms of Service
           </a>
           <a
+            id="privacyLink1"
             target="_blank"
-            href="https://tomo.inc/privacy"
             class="text-[13px] leading-[18px] text-normal tracking-0.65 cursor-pointer hover:text-pink"
           >
             Privacy Policy
@@ -138,11 +150,11 @@ import CenterContainer from "./centerContainer.astro";
     <div
       class="w-full flex items-center justify-center gap-[8.5px] md:hidden text-pink font-['NeueHaas'] text-sm leading-[18px] tracking-0.7 font-[450]"
     >
-      <a class="cursor-pointer" target="_blank" href="https://tomo.inc/terms"
+      <a id="termsLink2" class="cursor-pointer" target="_blank"
         >Terms of Service</a
       >
       <span class="inline-block w-[1px] h-[12px] bg-pink"></span>
-      <a class="cursor-pointer" target="_blank" href="https://tomo.inc/privacy"
+      <a id="privacyLink2" class="cursor-pointer" target="_blank"
         >Privacy Policy</a
       >
     </div>
