@@ -6,17 +6,15 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function () {
-      if (window.innerWidth < 769) {
-        var height = document.querySelector(".first-container").clientHeight;
-        var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      var height = document.querySelector(".first-container").clientHeight;
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-        var navContainer = document.querySelector(".nav-container");
+      var navContainer = document.querySelector(".nav-container");
 
-        if (scrollTop >= height - 40) {
-          navContainer.classList.add("bg-white", "drop-shadow-lg");
-        } else {
-          navContainer.classList.remove("bg-white", "drop-shadow-lg");
-        }
+      if (scrollTop >= height - 40) {
+        navContainer.classList.add("bg-white", "drop-shadow-lg");
+      } else {
+        navContainer.classList.remove("bg-white", "drop-shadow-lg");
       }
     });
   });
