@@ -10,5 +10,4 @@ export default defineConfig({
       serviceEntryPoint: "@astrojs/image/sharp",
     }),
   ],
-  server: { port: 8008, host: true },
 });

@@ -1,14 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  content: [
-    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
-    "./node_modules/flowbite/**/*.js",
-  ],
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     screens: {
       sm: "376px",
-      md: "769px",
+      md: "1025px",
       lg: "1025px",
       xl: "1280px",
       "2xl": "1536px",
@@ -48,5 +45,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("flowbite/plugin")],
+  plugins: [require("@tailwindcss/typography")],
 };
