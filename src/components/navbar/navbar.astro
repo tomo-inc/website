@@ -27,13 +27,20 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
     class="h-full flex flex-col md:flex-row justify-between items-center"
   >
     <Astronav>
-      <div class="flex w-full lg:w-auto items-center justify-between">
+      <div class="flex w-full items-center justify-between">
         <a href="/" class="text-lg flex items-center">
           <img class="w-[44px] h-[32px]" src="/images/logo.svg" alt="" />
           <span
             class="font-['NeueHaas'] pl-1.5 text-normal text-[20px] tracking-3"
             >TOMO</span
           >
+        </a>
+        <a
+          href="https://twitter.com/tomo_social"
+          target="_blank"
+          class="font-['NeueHaas'] text-normal text-[20px] tracking-0.65 cursor-pointer hidden md:block"
+        >
+          Come say hi on Twitter
         </a>
       </div>
     </Astronav>
