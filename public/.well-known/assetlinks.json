@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "tomo.app.unyx",
+            "sha256_cert_fingerprints": [
+                "24:0E:C4:6F:D0:0A:1E:75:89:FC:D9:A3:D2:AB:CB:0E:B0:F1:DE:ED"
+            ]
+        }
+    }
+]

@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/navbar/navbar.astro";
+import Footer from "../components/footer.astro";
+---
+
+<Layout title={Astro.props.username + " - Tomo"}>
+  <div class="back-style sm:!bg-cover sm:bg-bgDesktop bg-bgMobile bg-no-repeat">
+    <Navbar />
+    <div class="container">
+      <h1>{Astro.props.username}</h1>
+      <p>Redirecting to the app store...</p>
+      <Footer />
+    </div>
+  </div>
+</Layout>
+
+<script>
+  export async function load({ params }) {
+    const { username } = params;
+    return {
+      props: {
+        username,
+      },
+    };
+  }
+</script>
+
+<script type="module">
+  window.onload = function() {
+    const ua = window.navigator.userAgent.toLowerCase();
+    let storeUrl;
+
+    if (/iphone|ipad|ipod/.test(ua)) {
+      storeUrl = 'https://apps.apple.com/us/app/tomo-inc/id6468010287';
+    } else if (/android/.test(ua)) {
+      storeUrl = 'https://play.google.com/store/apps/details?id=tomo.app.unyx';
+    } else {
+      storeUrl = '/';
+    }
+
+    window.location.href = storeUrl;
+  }
+</script>
+
+<style>
+  .back-style {
+    background-position: 0 0, 100% 100%;
+    background-size: 100%, 100%;
+  }
+</style>

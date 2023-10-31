@@ -1,0 +1,17 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appID": "MYR69NP4LB.tomo.app.unyx",
+             "paths": ["/s/*"]
+           }
+       ]
+   },
+   "webcredentials": {
+      "apps": [ "MYR69NP4LB.tomo.app.unyx" ]
+   },
+
+    "appclips": {
+        "apps": [ "MYR69NP4LB.tomo.app.unyx" ]
+    }
+}
