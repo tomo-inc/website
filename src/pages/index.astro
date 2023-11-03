@@ -24,6 +24,27 @@ import "../fonts.css";
   AOS.init({ duration: 1000 });
 </script>
 
+<script>
+  const currentURL = window.location.href;
+  const queryString = currentURL.split('?')[1];
+
+  if (queryString) {
+    const urlParams = new URLSearchParams(queryString);
+    let codeParam = null;
+
+    urlParams.forEach((value, key) => {
+      if (key.toLowerCase() === "code") {
+        codeParam = value;
+      }
+    });
+
+    if (codeParam) {
+      const newURL = `tomo://tomo.inc/?code=${codeParam}`;
+      window.location.replace(newURL);
+    }
+  }
+</script>
+
 <style>
   .back-style {
     background-position: 0 0, 100% 100%;
