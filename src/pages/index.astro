@@ -31,15 +31,19 @@ import "../fonts.css";
   if (queryString) {
     const urlParams = new URLSearchParams(queryString);
     let codeParam = null;
+    let stateParam = null;
 
     urlParams.forEach((value, key) => {
       if (key.toLowerCase() === "code") {
         codeParam = value;
       }
+      if (key.toLowerCase() === "state") {
+        stateParam = value;
+      }
     });
 
-    if (codeParam) {
-      const newURL = `tomo://tomo.inc/?code=${codeParam}`;
+    if (codeParam && stateParam === "tomo_x_facebook") {
+      const newURL = `tomo://tomo.inc/?code=${codeParam}&state=${stateParam}`;
       window.location.replace(newURL);
     }
   }
