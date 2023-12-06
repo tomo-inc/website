@@ -19,3 +19,23 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "SofiaProMedium";
+  src: url("./fonts/SofiaProMedium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SofiaProRegular";
+  src: url("./fonts/SofiaProRegular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SofiaProSemiBold";
+  src: url("./fonts/SofiaProSemiBold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

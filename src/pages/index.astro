@@ -26,11 +26,13 @@ import "../fonts.css";
 
 <script>
   const currentURL = window.location.href;
-  const hashIndex = currentURL.indexOf('#');
-  const cleanURL = hashIndex !== -1 ? currentURL.substring(0, hashIndex) : currentURL;
+  const hashIndex = currentURL.indexOf("#");
+  const cleanURL =
+    hashIndex !== -1 ? currentURL.substring(0, hashIndex) : currentURL;
 
-  const queryIndex = cleanURL.indexOf('?');
-  const queryString = queryIndex !== -1 ? cleanURL.substring(queryIndex + 1) : '';
+  const queryIndex = cleanURL.indexOf("?");
+  const queryString =
+    queryIndex !== -1 ? cleanURL.substring(queryIndex + 1) : "";
 
   if (queryString) {
     const urlParams = new URLSearchParams(queryString);
