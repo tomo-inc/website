@@ -9,6 +9,12 @@ import CenterContainer from "./centerContainer.astro";
   document
     .getElementById("privacyLink")
     .setAttribute("href", `${location.origin}/privacy`);
+  document
+    .getElementById("termsLink1")
+    .setAttribute("href", `${location.origin}/terms`);
+  document
+    .getElementById("privacyLink1")
+    .setAttribute("href", `${location.origin}/privacy`);
 </script>
 <main
   class="w-full pb-[64px] md:pb-0 md:mt-[100px] px-6 md:px-0 relative md:bg-black"
@@ -147,14 +153,14 @@ import CenterContainer from "./centerContainer.astro";
       </div>
       <div class="flex flex-col gap-2">
         <a
-          id="termsLink"
+          id="termsLink1"
           target="_blank"
           class="cursor-pointer font-['SofiaProRegular'] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
         >
           Terms of Service
         </a>
         <a
-          id="privacyLink"
+          id="privacyLink1"
           target="_blank"
           class="cursor-pointer font-['SofiaProRegular'] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
         >
