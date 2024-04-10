@@ -1,0 +1,36 @@
+---
+import CenterContainer from "./centerContainer.astro";
+---
+
+<script>
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+  AOS.init({ duration: 1000 });
+</script>
+
+<div id="about-page"></div>
+<main
+  class="h-[unset] pt-24 relative sm:bg-cover bg-background"
+  data-aos="fade-up"
+>
+  <CenterContainer class="w-full flex flex-col items-center md:flex px-4">
+    <div
+      class="text-center font-['PopinsSemiBold'] text-[28px] md:text-5xl leading-[120%] mb-3 md:mb-4"
+    >
+      About Tomo
+    </div>
+    <div
+      class="text-center font-['PopinsNormal'] text-[rgba(18,18,18,0.75)] font-normal text-sm md:text-lg mb-4 md:mb-7"
+    >
+      Tomo is an all-in-one Web3 social wallet that transforms users' online
+      presence into a universal hub, <br />fostering genuine, spam-free
+      interactions and financial incentives. Tomo lets users connect directly <br
+      />with creators, participate in private discussions, and explore the new
+      generation of digital art with<br /> Tomoji. Active participation earns users
+      Tomo Points, enhancing your social capital.
+    </div>
+    <img src="/images/about-img-1.svg" class="hidden md:flex mb-8" />
+    <img src="/images/about-img-3.svg" class="md:hidden flex mb-8" />
+    <img src="/images/about-img-2.svg" class="flex w-40 md:w-[unset]" />
+  </CenterContainer>
+</main>

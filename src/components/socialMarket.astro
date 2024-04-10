@@ -1,0 +1,61 @@
+---
+import CenterContainer from "./centerContainer.astro";
+---
+
+<script>
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+  AOS.init({ duration: 1000 });
+</script>
+
+<div id="social-market"></div>
+<main class="pt-[100px] md:pt-40 bg-background" data-aos="fade-up">
+  <CenterContainer class="px-4 flex flex-col items-center">
+    <div class="flex flex-col items-center gap-3 md:gap-5 mb-5 md:mb-8">
+      <span
+        class="text-center font-['PopinsSemiBold'] text-[28px] md:text-5xl leading-[120%]"
+      >
+        Social Capital Market</span
+      >
+      <span
+        class="font-['PopinsNormal'] text-center text-[rgba(18,18,18,0.75)] font-normal text-sm md:text-lg"
+        >In the digital age, your social capital is as valuable as your
+        financial assets.
+      </span>
+    </div>
+    <div
+      class="flex flex-col md:flex-row gap-4 md:gap-[110px] max-w-[1080px] bg-white border border-solid border-[#F3F3F3] rounded-[20px] py-5 px-4 md:px-12 md:py-[42px]"
+    >
+      <div
+        class="flex flex-col items-center md:items-start gap-4 md:gap-6 flex-1"
+      >
+        <span
+          class="text-center font-['PopinsSemiBold'] text-[20px] md:text-[32px] leading-[120%]"
+        >
+          Genuine and Beneficial</span
+        >
+        <span
+          class="font-['PopinsNormal'] text-[rgba(18,18,18,0.75)] font-normal text-sm md:text-lg"
+          >Tomo Keys allow users to fairly price and monetize their attention
+          and network, creating a social capital market. This approach counters
+          the prevalent issues of spam and insincere requests, ensuring that
+          interactions are genuine and mutually beneficial...</span
+        >
+        <a
+          href="https://docs.tomo.inc/how-tomo-works/how-to-keys"
+          target="_blank"
+          class="cursor-pointer bg-black px-8 py-[9px] md:px-[30px] md:py-[15px] rounded-[40px] gap-1"
+        >
+          <span
+            class="font-['PopinsNormal'] text-white text-sm md:text-base tracking-0.65"
+            >Read More</span
+          >
+        </a>
+      </div>
+      <img
+        src="/images/social-market-img.svg"
+        class="h-[200px] md:h-[unset] flex-1"
+      />
+    </div>
+  </CenterContainer>
+</main>

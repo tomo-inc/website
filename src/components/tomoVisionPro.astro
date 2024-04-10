@@ -1,0 +1,91 @@
+---
+import CenterContainer from "./centerContainer.astro";
+---
+
+<script>
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+  AOS.init({ duration: 1000 });
+</script>
+<div id="visionPro"></div>
+<main class="pt-[100px] md:pt-44 bg-background" data-aos="fade-up">
+  <CenterContainer class="px-4">
+    <div
+      class="text-center font-['PopinsSemiBold'] text-[28px] md:text-5xl leading-[120%] mb-3 md:mb-4"
+    >
+      TOMO Vision Pro
+    </div>
+    <div
+      class="text-center font-['PopinsNormal'] text-[rgba(18,18,18,0.75)] font-normal text-sm md:text-lg mb-4 md:mb-8"
+    >
+      SocialFi with cutting-edge augmented reality technology.
+    </div>
+
+    <div class="flex justify-center">
+      <a
+        href="https://docs.tomo.inc/"
+        target="_blank"
+        class="cursor-pointer bg-black px-8 py-[9px] md:px-[30px] md:py-[15px] rounded-[40px] gap-1"
+      >
+        <span
+          class="font-['PopinsNormal'] text-white text-sm md:text-base tracking-0.65"
+          >Read More</span
+        >
+      </a>
+    </div>
+    <div class="video-container mt-6 md:mt-8">
+      <video
+        id="video"
+        controlslist="nodownload"
+        preload="meta"
+        class="rounded-3xl"
+        autoplay
+        loop
+      >
+        <source src="/images/slider.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </CenterContainer>
+</main>
+
+<script>
+  const video = document.getElementById("video");
+  const playButton = document.getElementById("play-button");
+
+  playButton.addEventListener("click", () => {
+    if ((video as HTMLMediaElement).paused) {
+      (video as HTMLMediaElement).play();
+      playButton.style.display = "none";
+    } else {
+      (video as HTMLMediaElement).pause();
+    }
+  });
+
+  video.addEventListener("click", () => {
+    if ((video as HTMLMediaElement).paused) {
+      (video as HTMLMediaElement).play();
+      playButton.style.display = "none";
+    } else {
+      (video as HTMLMediaElement).pause();
+    }
+  });
+</script>
+
+<style>
+  .video-container {
+    position: relative;
+  }
+
+  #video {
+    width: 100%;
+  }
+
+  #play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+</style>

@@ -1,0 +1,74 @@
+---
+import CenterContainer from "./centerContainer.astro";
+---
+
+<main
+  class="h-[500px] md:h-[800px] mt-[65px] md:mt-0 relative bg-cover sm:bg-cover"
+>
+  <video
+    src="/images/hero-bg.mp4"
+    class="hidden md:block absolute top-0 left-0 right-0 bottom-0 w-full"
+    autoplay
+    loop
+    muted></video>
+  <video
+    src="/images/hero-mobile-bg.mp4"
+    class="absolute md:hidden top-0 left-0 right-0 bottom-0 w-full"
+    autoplay
+    loop
+    muted></video>
+  <CenterContainer
+    class="w-full flex flex-col md:block px-[16px] !h-[unset] items-center"
+  >
+    <div
+      class="bg-white h-[322px] w-[330px] md:h-[659px] md:w-[751px] filter blur-[150px] md:p-6 translate-y-[10%] md:translate-y-[10%] md:absolute md:z-10 md:t-[-20px]"
+    >
+    </div>
+    <div
+      class="flex flex-col justify-start translate-y-[25%] md:translate-y-[30%] absolute md:z-10 md:t-[-20px]"
+    >
+      <div class="mb-[21px] md:mb-[43px] flex justify-center md:justify-start">
+        <img class="h-6 md:h-[50px] md:ml-4" src="/images/logo.svg" alt="" />
+      </div>
+
+      <h1
+        class="font-['PoppinsExtraBold'] text-[44px] md:text-[100px] md:font-semibold tracking-1.8 md:tracking-3.2 leading-[150%] md:leading-[120px] text-center md:text-left"
+      >
+        All-in-One
+        <br />Social Wallet
+      </h1>
+
+      <div class="flex flex-col">
+        <span
+          class="font-['DMSansMedium'] text-center md:text-start text-normal text-base font-light md:text-[20px] leading-[36px] mb-[10px] tracking-1.2 md:tracking-1.2"
+        >
+          Connect, Create, and Earn
+        </span>
+        <div class="flex justify-center md:justify-start gap-5">
+          <a
+            class="cursor-pointer"
+            target="_blank"
+            href="https://play.google.com/store/apps/details?id=tomo.app.unyx"
+          >
+            <img
+              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
+              src="/images/google-play.svg"
+              alt=""
+            />
+          </a>
+          <a
+            class="cursor-pointer"
+            target="_blank"
+            href="https://apps.apple.com/us/app/tomo-inc/id6468010287"
+          >
+            <img
+              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
+              src="/images/app-store.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </CenterContainer>
+</main>

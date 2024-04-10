@@ -6,9 +6,10 @@ module.exports = {
     screens: {
       sm: "376px",
       md: "1025px",
-      lg: "1025px",
-      xl: "1280px",
-      "2xl": "1536px",
+      mdl: "1300px",
+      lg: "1460px",
+      xl: "1580px",
+      "2xl": "1636px",
     },
     extend: {
       fontFamily: {
@@ -34,12 +35,13 @@ module.exports = {
         pink: "#8967E7",
         gray: "#F9F9F9",
         black: "#000000",
+        background: "#F8FAFC",
       },
       fontSize: {
         64: "64px",
       },
       backgroundImage: {
-        // bgDesktop: "url('/images/bg-body.jpg')",
+        // bgMobile: "url('/images/bg-body-mobile.jpg')",
         // bgMobile:
         //   "url('/images/mobile-bg-hero.jpg'), url('/images/bg-footer.jpg')",
       },

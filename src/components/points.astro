@@ -1,0 +1,52 @@
+---
+import CenterContainer from "./centerContainer.astro";
+---
+
+<script>
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+  AOS.init({ duration: 1000 });
+</script>
+<div id="points"></div>
+<main class="pt-[100px] md:pt-44 bg-background sm:pb-40" data-aos="fade-up">
+  <CenterContainer class="px-4 pb-[100px]">
+    <div class="relative">
+      <img
+        src="/images/tomo-points-img-1.svg"
+        class="absolute bottom-6 left-8 w-24 md:w-[unset]"
+      />
+      <img
+        src="/images/tomo-points-img-2.svg"
+        class="absolute bottom-6 right-8 md:w-32"
+      />
+
+      <div
+        class="rounded-[20px] md:min-h-[380px] bg-gradient-to-b from-[#AFF5FF] to-[#FFB7FB] flex flex-col items-center justify-center py-7 px-4"
+      >
+        <div
+          class="text-center font-['PopinsSemiBold'] text-[28px] md:text-5xl leading-[120%] mb-3 md:mb-4"
+        >
+          TOMO Points
+        </div>
+        <span
+          class="font-['PopinsNormal'] text-center text-[rgba(18,18,18,0.75)] font-normal text-sm md:text-lg mb-4 md:mb-11"
+        >
+          TOMO points serve as a reward system incentivizing users to engage
+          with TOMO's social<br /> wallet and related product features.
+        </span>
+        <div class="flex justify-center mb-[120px] md:mb-[unset]">
+          <a
+            href="https://docs.tomo.inc/how-tomo-works/points-system"
+            target="_blank"
+            class="cursor-pointer bg-black px-8 py-[9px] md:px-[30px] md:py-[15px] rounded-[40px] gap-1"
+          >
+            <span
+              class="font-['PopinsNormal'] text-white text-sm md:text-base tracking-0.65"
+              >Read More</span
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+  </CenterContainer>
+</main>

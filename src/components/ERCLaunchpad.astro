@@ -1,0 +1,164 @@
+---
+import CenterContainer from "./centerContainer.astro";
+import InfiniteLooper from "./react/infiniteLooper";
+---
+
+<script>
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+  AOS.init({ duration: 1000 });
+</script>
+
+<div id="tomoji"></div>
+<main class="pt-[100px] md:pt-40 bg-background" data-aos="fade-up">
+  <CenterContainer class="mb-3 px-4">
+    <div
+      class="text-center font-['PopinsSemiBold'] text-[28px] md:text-5xl leading-[120%] mb-3 md:mb-4"
+    >
+      Tomoji: ERC404 launchpad
+    </div>
+    <div
+      class="text-center font-['PopinsNormal'] text-[rgba(18,18,18,0.75)] font-normal text-sm md:text-lg mb-4 md:mb-8"
+    >
+      In the Bitcoin ecosystem, the trend is towards on-chain migration of
+      Bitcoin assets and their circulation across<br /> various multi-chain platforms
+      (such as exchange chains). TOMO's wallet component, the BTC DeFi Hub
+    </div>
+
+    <div class="flex justify-center">
+      <a
+        href="https://docs.tomo.inc/"
+        target="_blank"
+        class="cursor-pointer bg-black px-8 py-[9px] md:px-[30px] md:py-[15px] rounded-[40px] gap-1"
+      >
+        <span
+          class="font-['PopinsNormal'] text-white text-sm md:text-base tracking-0.65"
+          >Read More</span
+        >
+      </a>
+    </div>
+  </CenterContainer>
+  <div
+    class="hidden md:block w-[256px] h-[445px] absolute z-20 left-0"
+    style="background-image: linear-gradient(268deg, rgba(255, 255, 255, 0.00) 16.7%, #FFF 84.54%);"
+  >
+  </div>
+
+  <div
+    class="hidden md:block w-[256px] h-[445px] absolute z-20 right-0"
+    style="background-image: linear-gradient(82deg, rgba(255, 255, 255, 0.00) 16.7%, #FFF 84.54%);"
+  >
+  </div>
+  <InfiniteLooper speed={20} direction="left" client:load>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup1-img-1.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup1-img-2.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup1-img-3.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup1-img-4.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup1-img-5.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup1-img-6.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup1-img-7.gif"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5 rounded-[10px]"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup1-img-8.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup1-img-9.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+  </InfiniteLooper>
+  <InfiniteLooper speed={20} direction="right" client:load>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup2-img-1.gif"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5 rounded-[10px]"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup2-img-2.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup2-img-3.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup2-img-4.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup2-img-5.gif"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5 rounded-[10px]"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup2-img-6.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup2-img-7.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup2-img-8.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+    <div class="contentBlock contentBlock--one">
+      <img
+        src="/images/loopGroup2-img-9.svg"
+        class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5"
+      />
+    </div>
+  </InfiniteLooper>
+</main>

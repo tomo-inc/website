@@ -1,0 +1,36 @@
+---
+import CenterContainer from "./centerContainer.astro";
+---
+
+<script>
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+  AOS.init({ duration: 1000 });
+</script>
+
+<div id="investors-page"></div>
+<main class="h-[unset] relative sm:bg-cover bg-background" data-aos="fade-up">
+  <CenterContainer class="w-full flex flex-col items-center md:flex px-4">
+    <div class="mt-[100px] md:mt-[180px] flex flex-col">
+      <div
+        class="text-center font-['PopinsSemiBold'] text-[28px] md:text-5xl leading-[120%] mb-4 md:mb-5"
+      >
+        Our Investors
+      </div>
+      <span
+        class="font-['PopinsNormal'] text-center text-[rgba(18,18,18,0.75)] font-normal text-sm md:text-lg mb-6 md:mb-8"
+        >Explore investors that help grow Tomo
+      </span>
+      <img
+        src="/images/partners-desktop.svg"
+        alt=""
+        class="hidden md:block w-full md:w-[80%] mx-auto"
+      />
+      <img
+        src="/images/partners-mobile.svg"
+        alt=""
+        class="block md:hidden w-full md:w-[80%] mx-auto"
+      />
+    </div>
+  </CenterContainer>
+</main>
