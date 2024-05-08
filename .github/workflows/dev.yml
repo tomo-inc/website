@@ -1,17 +1,35 @@
-name:
-  deploy-dev
-
+name: Node.js CI
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
 jobs:
-  build-and-deploy:
+  main-build:
+    if: contains( github.ref, 'main')
     runs-on: ubuntu-latest
-    
-
+    strategy:
+      matrix:
+        node-version: [v18.20.2]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
-      - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: yarn install --frozen-lockfile 
+    - run: yarn build
 
-      - name: webhook
-        run: curl -X POST -H 'X-Github-Token:${{ secrets.WEBHOOK }}' https://webhook.tomo.inc/webhook
+    - name: Deploying application to Amazon S3
+      uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --follow-symlinks
+      env:
+        AWS_S3_BUCKET: 'tomo.inc'
+        AWS_ACCESS_KEY_ID: ${{ secrets.PANSW_AWS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.PANSW_AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: 'us-west-1' 
+        SOURCE_DIR: './dist' 
