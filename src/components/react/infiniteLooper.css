@@ -28,3 +28,37 @@
   width: max-content;
   animation: none;
 }
+
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: calc(100% * 2);
+  animation: scroll-up 20s linear infinite;
+}
+
+.scroll-item {
+  width: 100%;
+  height: 375px;
+  box-sizing: border-box;
+}
+
+.scroll-image {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}

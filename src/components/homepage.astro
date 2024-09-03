@@ -4,28 +4,24 @@ import CenterContainer from "./centerContainer.astro";
 ---
 
 <main
-  class="h-[500px] md:h-[765px] bg-background backdrop-blur-sm mt-[65px] md:mt-[122px] md:mx-8 relative bg-cover sm:bg-cover"
+  class="h-[765px] backdrop-blur-sm mt-[65px] md:mt-[122px] mx-5 md:mx-8 relative bg-cover sm:bg-cover"
 >
   <img
     src="/images/bg-img.png"
     class="hidden md:block absolute top-0 left-0 right-0 bottom-0 w-full"
   />
-  <video
-    id="video-input"
-    src="/images/hero-mobile-bg.mp4"
-    class="absolute md:hidden top-0 left-0 right-0 bottom-0 w-full"
-    autoplay
-    playsinline
-    loop
-    muted></video>
+  <img
+    src="/images/mobile-bg-img.png"
+    class="md:hidden absolute top-0 left-0 right-0 bottom-0 w-full"
+  />
   <CenterContainer
     class="w-full flex flex-col md:block px-[16px] !h-[unset] items-center"
   >
     <div
-      class="flex flex-col justify-start translate-y-[25%] md:translate-y-[30%] absolute md:z-10 md:t-[-20px]"
+      class="flex flex-col items-start justify-start translate-y-[80%] md:translate-y-[30%] absolute md:z-10 md:t-[-20px]"
     >
       <h1
-        class="font-['Helvetica'] text-[44px] md:text-8xl md:font-bold tracking-1.8 md:tracking-3.2 leading-[150%] md:leading-[120px] text-center md:text-left text-white"
+        class="font-['Helvetica'] text-start text-[40px] md:text-8xl font-bold tracking-1.8 md:tracking-3.2 leading-[150%] md:leading-[120px] md:text-start text-white"
       >
         Your crypto
         <br />Social Wallet
@@ -33,7 +29,7 @@ import CenterContainer from "./centerContainer.astro";
 
       <div class="flex flex-col">
         <span
-          class="font-['Helvetica'] text-white w-[592px] text-center md:text-start text-base font-normal md:text-[20px] leading-[36px] mb-[10px] md:mb-[52px] tracking-1.2 md:tracking-[-0.18px]"
+          class="font-['Helvetica'] text-white max-w-[310px] md:max-w-[592px] text-start text-base font-normal md:text-[20px] leading-[36px] mb-[10px] md:mb-[52px] tracking-1.2 md:tracking-[-0.18px]"
         >
           An all-in-one social wallet designed to bring the mass adoption of
           crypto, making it accessible and user-friendly for everyone.
@@ -122,7 +118,7 @@ import CenterContainer from "./centerContainer.astro";
     </div>
     <img
       src="/images/hero-right.svg"
-      class="w-1/4 absolute z-20 right-72 top-20"
+      class="hidden md:block w-1/4 absolute z-20 right-72 top-20"
     />
   </CenterContainer>
 </main>

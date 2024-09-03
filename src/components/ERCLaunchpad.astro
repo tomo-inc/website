@@ -1,5 +1,6 @@
 ---
 import CenterContainer from "./centerContainer.astro";
+import Carousel from "./react/carousel";
 import InfiniteLooper from "./react/infiniteLooper";
 ---
 
@@ -10,47 +11,59 @@ import InfiniteLooper from "./react/infiniteLooper";
 </script>
 
 <div id="tomoji"></div>
-<main class="pt-[100px] md:pt-40 bg-background" data-aos="fade-up">
-  <CenterContainer class="mb-3 px-4">
+<main
+  class="mt-[100px] md:mt-40 pt-[67px] md:pt-0 bg-[#121212]"
+  data-aos="fade-up"
+>
+  <CenterContainer
+    class="px-4 flex flex-col-reverse md:flex-row items-center md:justify-between gap-[45px] md:gap-[165px]"
+  >
+    <Carousel />
     <div
-      class="text-center font-['PopinsSemiBold'] text-[28px] md:text-5xl leading-[120%] mb-3 md:mb-4"
+      class="flex flex-col justify-center items-start gap-7 md:gap-8 font-[Helvetica] leading-none text-white"
     >
-      Tomoji: ERC404 launchpad
-    </div>
-    <div
-      class="text-center font-['PopinsNormal'] text-[rgba(18,18,18,0.75)] font-normal text-sm md:text-lg mb-4 md:mb-8"
-    >
-      <strong class="font-['PopinsSemiBold']"
-        >The ERC-404 token standard
-      </strong>merges the unique qualities of NFTs with the liquidity of ERC20
-      tokens, making it ideal for launching art and meme collections. It
-      introduces fractional ownership, allowing more people to own parts of a
-      digital asset. This increases participation and improves trading
-      flexibility compared to traditional NFTs.<br /><br />
-      <strong class="font-['PopinsSemiBold']">Tomoji Launchpad</strong> addresses
-      the technical complexity of creating a new token, which limits creative expression
-      for many individuals. With Tomoji, users can create their own ERC-404 collections
-      by choosing a picture, name, supply, and mint price, while the smart contract
-      is automatically generated. Half of the tokens are locked in liquidity pools,
-      ensuring market stability. Open minting facilitates fair distribution.
-    </div>
-
-    <div class="flex justify-center">
-      <img src="/images/live-on-base.svg" class="hidden md:block" />
-      <img src="/images/live-on-base-mobile.svg" class="md:hidden" />
-      <!-- <a
-        href="https://docs.tomo.inc/tomo-ecosystem/tomoji"
-        target="_blank"
-        class="cursor-pointer bg-black px-8 py-[9px] md:px-[30px] md:py-[15px] rounded-[40px] gap-1"
+      <span class="text-4xl md:text-[60px] font-medium">Tomo App</span>
+      <span class="max-w-[454px] text-sm md:text-base">
+        Connect, trade, and earn through your all-in-one Web3 social wallet.</span
       >
-        <span
-          class="font-['PopinsNormal'] text-white text-sm md:text-base tracking-0.65"
-          >Read More</span
+      <div class="flex flex-wrap max-w-[400px] gap-4">
+        <a
+          class="cursor-pointer"
+          target="_blank"
+          href="https://play.google.com/store/apps/details?id=tomo.app.unyx"
         >
-      </a> -->
+          <img
+            class="max-w-[165px] max-h-[44px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
+            src="/images/google-play.svg"
+            alt=""
+          />
+        </a>
+        <a
+          class="cursor-pointer"
+          target="_blank"
+          href="https://apps.apple.com/us/app/tomo-inc/id6468010287"
+        >
+          <img
+            class="max-w-[165px] max-h-[44px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
+            src="/images/app-store.svg"
+            alt="app store"
+          />
+        </a>
+        <a
+          class="cursor-pointer"
+          target="_blank"
+          href="https://pub-6c52100fa9ac41f681f0713eac878541.r2.dev/app-prod-release.apk"
+        >
+          <img
+            class="max-w-[179px] max-h-[44px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
+            src="/images/android.svg"
+            alt="apk"
+          />
+        </a>
+      </div>
     </div>
   </CenterContainer>
-  <div
+  <!-- <div
     class="hidden md:block w-[256px] h-[445px] absolute z-20 left-0"
     style="background-image: linear-gradient(268deg, rgba(255, 255, 255, 0.00) 16.7%, #FFF 84.54%);"
   >
@@ -60,8 +73,8 @@ import InfiniteLooper from "./react/infiniteLooper";
     class="hidden md:block w-[256px] h-[445px] absolute z-20 right-0"
     style="background-image: linear-gradient(82deg, rgba(255, 255, 255, 0.00) 16.7%, #FFF 84.54%);"
   >
-  </div>
-  <InfiniteLooper speed={20} direction="left" client:load>
+  </div> -->
+  <!-- <InfiniteLooper speed={20} direction="left" client:load>
     <div class="contentBlock contentBlock--one">
       <img
         src="/images/dragon-img-3.gif"
@@ -172,5 +185,5 @@ import InfiniteLooper from "./react/infiniteLooper";
         class="h-[100px] md:h-[200px] max-h-[306px] flex-1 mr-2.5 md:mr-5 rounded-[10px]"
       />
     </div>
-  </InfiniteLooper>
+  </InfiniteLooper> -->
 </main>
