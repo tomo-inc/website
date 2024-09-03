@@ -62,12 +62,12 @@ function InfiniteLooper({
   }, [looperInstances, setupInstances]);
 
   return (
-    <div className="looper mt-6" ref={outerRef}>
-      <div className="looper__innerList" ref={innerRef} data-animate="true">
+    <div className="looper mt-6 " ref={outerRef}>
+      <div className="looper__innerList " ref={innerRef} data-animate="true">
         {[...Array(looperInstances)].map((_, ind) => (
           <div
             key={ind}
-            className="looper__listInstance"
+            className="looper__listInstance element"
             style={{
               animationDuration: `${speed}s`,
               animationDirection: direction === "right" ? "reverse" : "normal",

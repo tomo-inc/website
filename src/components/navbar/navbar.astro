@@ -46,9 +46,19 @@ const menuitems = [
       var navContainer = document.querySelector(".nav-container");
 
       if (scrollTop >= height - 40) {
-        navContainer.classList.add("bg-white", "drop-shadow-lg");
+        navContainer.classList.add(
+          "bg-background",
+          "mdl:bg-background",
+          "backdrop-blur-sm",
+          "drop-shadow-lg"
+        );
       } else {
-        navContainer.classList.remove("bg-white", "drop-shadow-lg");
+        navContainer.classList.remove(
+          "bg-background",
+          "mdl:bg-background",
+          "backdrop-blur-sm",
+          "drop-shadow-lg"
+        );
       }
     });
   });
@@ -143,13 +153,14 @@ const menuitems = [
 </script>
 
 <header
-  class="first-container nav-container fixed right-0 left-0 z-30 h-65 py-[18px] mdl:py-0 mdl:px-6 mdl:flex xl:px-[120px] bg-[rgba(255,255,255,0.97)] mdl:bg-white"
+  class="first-container nav-container fixed right-0 left-0 z-30 h-20 py-[18px] mdl:py-0 mdl:px-6 mdl:flex xl:px-[120px]"
 >
   <Astronav class="w-full">
     <div class="flex w-full items-center justify-between">
       <div class="flex items-center gap-24">
-        <a href="/" class="text-lg flex items-center pl-4 mdl:pl-0">
-          <img class="h-[32px] mdl:h-[32px]" src="/images/logo.svg" alt="" />
+        <a href="/" class="text-lg flex items-center pl-4 mdl:pl-0 gap-[10px]">
+          <img class="h-6 mdl:h-[32px]" src="/images/logo.svg" alt="" />
+          <span class="font-[Kufam]">TOMO Inc.</span>
         </a>
         <div class="gap-9 hidden mdl:flex">
           <div

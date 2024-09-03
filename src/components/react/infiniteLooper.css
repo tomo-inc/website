@@ -26,6 +26,5 @@
 .looper__listInstance {
   display: flex;
   width: max-content;
-
   animation: none;
 }

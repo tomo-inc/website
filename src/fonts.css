@@ -75,3 +75,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "LibreCaslonBold";
+  src: url("./fonts/LibreCaslonText-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Kufam";
+  src: url("./fonts/Kufam-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/HelveticaNeue.ttc") format("truetype");
+}

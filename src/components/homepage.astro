@@ -1,20 +1,15 @@
 ---
+import { TestPage } from "../pages/test";
 import CenterContainer from "./centerContainer.astro";
 ---
 
 <main
-  class="h-[500px] md:h-[965px] bg-background mt-[65px] md:mt-0 relative bg-cover sm:bg-cover"
+  class="h-[500px] md:h-[765px] bg-background backdrop-blur-sm mt-[65px] md:mt-[122px] md:mx-8 relative bg-cover sm:bg-cover"
 >
-  <!--<video-->
-  <!--  src="/images/hero_bg_2.mp4"-->
-  <!--  class="hidden md:block absolute top-0 left-0 right-0 bottom-0 w-full"-->
-  <!--  autoplay-->
-  <!--  playsinline-->
-  <!--  loop-->
-  <!--  muted></video>-->
   <img
-        src="/images/bg-0726.png"
-        class="hidden md:block absolute top-0 left-0 right-0 bottom-0 w-full"/>
+    src="/images/bg-img.png"
+    class="hidden md:block absolute top-0 left-0 right-0 bottom-0 w-full"
+  />
   <video
     id="video-input"
     src="/images/hero-mobile-bg.mp4"
@@ -27,30 +22,30 @@ import CenterContainer from "./centerContainer.astro";
     class="w-full flex flex-col md:block px-[16px] !h-[unset] items-center"
   >
     <div
-      class="bg-white h-[322px] w-[330px] md:h-[659px] md:w-[751px] filter blur-[150px] md:p-6 translate-y-[10%] md:translate-y-[10%] md:absolute md:z-10 md:t-[-20px]"
-    >
-    </div>
-    <div
       class="flex flex-col justify-start translate-y-[25%] md:translate-y-[30%] absolute md:z-10 md:t-[-20px]"
     >
-      <div class="mb-[21px] md:mb-[43px] flex justify-center md:justify-start">
-        <img class="h-6 md:h-[50px] md:ml-4" src="/images/logo.svg" alt="" />
-      </div>
-
       <h1
-        class="font-['PoppinsExtraBold'] text-[44px] md:text-[100px] md:font-semibold tracking-1.8 md:tracking-3.2 leading-[150%] md:leading-[120px] text-center md:text-left"
+        class="font-['Helvetica'] text-[44px] md:text-8xl md:font-bold tracking-1.8 md:tracking-3.2 leading-[150%] md:leading-[120px] text-center md:text-left text-white"
       >
-        All-in-One
+        Your crypto
         <br />Social Wallet
       </h1>
 
       <div class="flex flex-col">
         <span
-          class="font-['DMSansMedium'] text-center md:text-start text-normal text-base font-light md:text-[20px] leading-[36px] mb-[10px] md:mb-[52px] tracking-1.2 md:tracking-1.2"
+          class="font-['Helvetica'] text-white w-[592px] text-center md:text-start text-base font-normal md:text-[20px] leading-[36px] mb-[10px] md:mb-[52px] tracking-1.2 md:tracking-[-0.18px]"
         >
-          Connect, Create, and Earn
+          An all-in-one social wallet designed to bring the mass adoption of
+          crypto, making it accessible and user-friendly for everyone.
         </span>
-        <div class="flex justify-center md:justify-start gap-5">
+        <a
+          href="https://pro.tomo.inc/"
+          target="_blank"
+          class="cursor-pointer bg-[#F21F7F] text-white p-3 px-4 rounded-lg w-[173px] text-center text-base"
+        >
+          Get the app
+        </a>
+        <!-- <div class="flex justify-center md:justify-start gap-5">
           <a
             class="cursor-pointer"
             target="_blank"
@@ -74,55 +69,60 @@ import CenterContainer from "./centerContainer.astro";
             />
           </a>
           <a
-              class="cursor-pointer md:block hidden"
-              target="_blank"
-              href="https://pub-6c52100fa9ac41f681f0713eac878541.r2.dev/app-prod-release.apk"
+            class="cursor-pointer md:block hidden"
+            target="_blank"
+            href="https://pub-6c52100fa9ac41f681f0713eac878541.r2.dev/app-prod-release.apk"
           >
             <img
-                class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-                src="/images/android.svg"
-                alt="apk"
+              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
+              src="/images/android.svg"
+              alt="apk"
             />
           </a>
           <a
-              class="cursor-pointer md:block hidden"
-              target="_blank"
-              href="https://chromewebstore.google.com/detail/tomo-wallet/pfccjkejcgoppjnllalolplgogenfojk"
+            class="cursor-pointer md:block hidden"
+            target="_blank"
+            href="https://chromewebstore.google.com/detail/tomo-wallet/pfccjkejcgoppjnllalolplgogenfojk"
           >
             <img
-                class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-                src="/images/chrome.svg"
-                alt="chrome"
+              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
+              src="/images/chrome.svg"
+              alt="chrome"
             />
           </a>
         </div>
-        <div class="flex justify-center md:justify-start gap-5 mt-[16px] md:hidden">
+        <div
+          class="flex justify-center md:justify-start gap-5 mt-[16px] md:hidden"
+        >
           <a
-              class="cursor-pointer"
-              target="_blank"
-              href="https://pub-6c52100fa9ac41f681f0713eac878541.r2.dev/app-prod-release.apk"
+            class="cursor-pointer"
+            target="_blank"
+            href="https://pub-6c52100fa9ac41f681f0713eac878541.r2.dev/app-prod-release.apk"
           >
             <img
-                class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-                src="/images/android.svg"
-                alt="apk"
+              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
+              src="/images/android.svg"
+              alt="apk"
             />
           </a>
 
           <a
-              class="cursor-pointer"
-              target="_blank"
-              href="https://chromewebstore.google.com/detail/tomo-wallet/pfccjkejcgoppjnllalolplgogenfojk"
+            class="cursor-pointer"
+            target="_blank"
+            href="https://chromewebstore.google.com/detail/tomo-wallet/pfccjkejcgoppjnllalolplgogenfojk"
           >
             <img
-                class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-                src="/images/chrome.svg"
-                alt="chrome"
+              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
+              src="/images/chrome.svg"
+              alt="chrome"
             />
           </a>
-        </div>
-
+        </div> -->
       </div>
     </div>
+    <img
+      src="/images/hero-right.svg"
+      class="w-1/4 absolute z-20 right-72 top-20"
+    />
   </CenterContainer>
 </main>

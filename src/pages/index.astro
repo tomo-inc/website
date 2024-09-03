@@ -15,17 +15,19 @@ import TomoWallet from "../components/tomoWallet.astro";
 import SocialMarket from "../components/socialMarket.astro";
 import TomoId from "../components/tomoId.astro";
 import Points from "../components/points.astro";
+import { TestPage } from "./test";
 ---
 
 <Layout title="Tomo: All-in-one Social Wallet">
   <div class="back-style sm:!bg-cover bg-no-repeat">
     <Navbar />
+
     <Container class="flex flex-col bg-background">
       <!-- <Hero /> -->
       <Homepage />
       <AboutTomo />
-      <Investors />
       <ERCLaunchpad />
+      <Investors />
       <TomoWallet />
       <SocialMarket />
       <TomoId />
