@@ -81,8 +81,14 @@
 }
 
 @font-face {
-  font-family: "Kufam";
+  font-family: "KufamBold";
   src: url("./fonts/Kufam-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Kufam";
+  src: url("./fonts/Kufam-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @font-face {

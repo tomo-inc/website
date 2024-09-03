@@ -1,0 +1,53 @@
+---
+import CenterContainer from "./centerContainer.astro";
+---
+
+<script>
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+  AOS.init({ duration: 1000 });
+</script>
+
+<div id="sdk-page"></div>
+<main
+  class="h-[unset] md:py-32x py-16 relative sm:bg-cover bg-background"
+  data-aos="fade-up"
+>
+  <CenterContainer
+    class="w-full flex flex-col md:flex-row justify-center gap-[48px] md:gap-[100px] items-center md:flex px-4"
+  >
+    <img class="md:inline-block hidden" src="/images/tomo-sdk.svg" />
+    <div class="flex flex-col items-start gap-7 md:gap-8 font-[Helvetica]">
+      <div class="flex flex-col items-start">
+        <span
+          class="md:text-[60px] text-4xl font-medium leading-none text-normal"
+          >Tomo SDK Solutions</span
+        >
+      </div>
+      <div class="md:max-w-[454px] text-sm md:text-base">
+        Streamline wallet connections like never before with Tomo SDK—a
+        comprehensive solution crafted by developers, for developers.
+      </div>
+      <a
+        href="https://pro.tomo.inc/"
+        target="_blank"
+        class="cursor-pointer bg-[#F21F7F] text-white p-3 px-4 rounded-lg text-center text-base"
+      >
+        Tomo Auth
+      </a>
+      <div
+        class="flex items-start md:items-center md:gap-12 gap-6 md:flex-row flex-col justify-start"
+      >
+        <div class="flex items-center gap-2 cursor-pointer">
+          <div class="border-b-[1px] border-primary">Wallet connector</div>
+          <img src="/images/arrow-right.svg" />
+        </div>
+        <div class="flex items-center gap-2 cursor-pointer">
+          <span class="border-b-[1px] border-primary">Telegram wallet SDK</span>
+          <img src="/images/arrow-right.svg" />
+        </div>
+      </div>
+    </div>
+    <img class="inline-block md:hidden" src="/images/tomo-sdk.svg" />
+  </CenterContainer>
+</main>

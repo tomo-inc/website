@@ -3,36 +3,20 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "About",
+    title: "Telegram Bot",
     id: "about-mobile-button",
   },
   {
-    title: "Our Backers",
+    title: "Tomo App",
     id: "investors-mobile-button",
   },
   {
-    title: "Tomoji",
+    title: "Extension",
     id: "tomoji-mobile-button",
   },
   {
-    title: "Tomo Wallet",
+    title: "SDK Solutions",
     id: "wallet-mobile-button",
-  },
-  {
-    title: "Social Capital Market",
-    id: "socialMarket-mobile-button",
-  },
-  {
-    title: "Tomo ID",
-    id: "tomoID-mobile-button",
-  },
-  // {
-  //   title: "Tomo Vision",
-  //   id: "visionPro-mobile-button",
-  // },
-  {
-    title: "Tomo Points",
-    id: "points-mobile-button",
   },
 ];
 ---
@@ -168,9 +152,8 @@ const menuitems = [
             id="about-button"
             onclick="scrollTo"
           >
-            <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
-              >About</span
+            <span class="font-['Helvetica'] text-normal text-base"
+              >Telegram Bot</span
             >
           </div>
           <div
@@ -178,51 +161,22 @@ const menuitems = [
             id="investors-button"
             onclick="scrollTo"
           >
-            <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
-              >Our Backers</span
+            <span class="font-['Helvetica'] text-normal text-base"
+              >Tomo App</span
             >
           </div>
           <div class="cursor-pointer hidden mdl:block">
             <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
+              class="font-['Helvetica'] text-normal text-base"
               id="tomoji-button"
-              onclick="scrollTo">Tomoji</span
+              onclick="scrollTo">Extension</span
             >
           </div>
           <div class="cursor-pointer hidden md:block">
             <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
+              class="font-['Helvetica'] text-normal text-base"
               id="wallet-button"
-              onclick="scrollTo">Wallet</span
-            >
-          </div>
-          <div class="cursor-pointer hidden md:block">
-            <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
-              id="socialMarket-button"
-              onclick="scrollTo">Social Market</span
-            >
-          </div>
-          <div class="cursor-pointer hidden md:block">
-            <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
-              id="tomoID-button"
-              onclick="scrollTo">Tomo ID</span
-            >
-          </div>
-          <!-- <div class="cursor-pointer hidden md:block">
-            <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
-              id="visionPro-button"
-              onclick="scrollTo">Vision Pro</span
-            >
-          </div> -->
-          <div class="cursor-pointer hidden md:block">
-            <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
-              id="points-button"
-              onclick="scrollTo">Points</span
+              onclick="scrollTo">SDK Solutions</span
             >
           </div>
         </div>
@@ -234,18 +188,18 @@ const menuitems = [
 
       <div class="hidden mdl:flex items-center gap-4">
         <a
-          href="https://id.tomo.inc/tomo"
+          href="https://pro.tomo.inc/"
           target="_blank"
-          class="cursor-pointer hidden mdl:flex border border-solid border-[#121212] text-sm p-2 px-4 rounded-full felx gap-1"
+          class="cursor-pointer hidden mdl:flex border border-solid border-[#121212] bg-black text-white text-sm p-2 px-4 rounded-md felx gap-1"
         >
-          Tomo ID
+          Docs
         </a>
         <a
           href="https://pro.tomo.inc/"
           target="_blank"
-          class="cursor-pointer hidden mdl:flex border border-solid border-[#121212] bg-black text-white text-sm p-2 px-4 rounded-full felx gap-1"
+          class="cursor-pointer hidden mdl:flex border border-solid bg-[#F21F7F] text-white text-sm p-2 px-4 rounded-md felx gap-1"
         >
-          Launch App
+          Contact
         </a>
       </div>
     </div>
