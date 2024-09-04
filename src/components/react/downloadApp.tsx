@@ -38,12 +38,12 @@ export const DownloadApp: React.FC<IProps> = ({ className }) => {
       >
         <li className="pb-4 rounded-[6px]">
           <a
-            className="cursor-pointer "
+            className="cursor-pointer"
             target="_blank"
             href="https://play.google.com/store/apps/details?id=tomo.app.unyx"
           >
             <img
-              className=" shadow-lg rounded-[6px] max-w-[165px] max-h-[44px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
+              className=" shadow-lg rounded-[6px] max-w-[179px] max-h-[44px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
               src="/images/google-play2.svg"
               alt=""
             />
@@ -56,7 +56,7 @@ export const DownloadApp: React.FC<IProps> = ({ className }) => {
             href="https://apps.apple.com/us/app/tomo-inc/id6468010287"
           >
             <img
-              className=" shadow-lg rounded-[6px] max-w-[165px] max-h-[44px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
+              className=" shadow-lg rounded-[6px] max-w-[179px] max-h-[44px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
               src="/images/app-store2.svg"
               alt="app store"
             />
