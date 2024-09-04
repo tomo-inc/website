@@ -1,10 +1,10 @@
 ---
-import { TestPage } from "../pages/test";
 import CenterContainer from "./centerContainer.astro";
+import { DownloadApp } from "./react/downloadApp";
 ---
 
 <main
-  class="h-[765px] backdrop-blur-sm mt-[65px] md:mt-[122px] mx-5 md:mx-8 relative bg-cover sm:bg-cover"
+  class="h-[630px] smd:h-[400px] md:h-[450px] mdl:h-[600px] lg:h-[765px] backdrop-blur-sm mt-[65px] md:mt-[100px] mdl:mt-[122px] mx-5 md:mx-8 relative bg-cover sm:bg-cover bg-[unset] smd:bg-[url('/images/bg-img.png')] md:bg-[url(unset)] rounded-[20px]"
 >
   <img
     src="/images/bg-img.png"
@@ -12,16 +12,16 @@ import CenterContainer from "./centerContainer.astro";
   />
   <img
     src="/images/mobile-bg-img.png"
-    class="md:hidden absolute top-0 left-0 right-0 bottom-0 w-full"
+    class="smd:hidden absolute top-0 left-0 right-0 bottom-0 w-full"
   />
   <CenterContainer
     class="w-full flex flex-col md:block px-[16px] !h-[unset] items-center"
   >
     <div
-      class="flex flex-col items-start justify-start translate-y-[80%] md:translate-y-[30%] absolute md:z-10 md:t-[-20px]"
+      class="flex flex-col items-start justify-start translate-y-[70%] smd:translate-y-[30%] md:translate-y-[20%] lg:translate-y-[30%] absolute md:z-10 md:t-[-20px] gap-6 md:gap-8"
     >
       <h1
-        class="font-['Helvetica'] text-start text-[40px] md:text-8xl font-bold tracking-1.8 md:tracking-3.2 leading-[150%] md:leading-[120px] md:text-start text-white"
+        class="font-['Helvetica'] text-start text-[40px] md:text-6xl mdl:text-8xl font-bold tracking-1.8 md:tracking-3.2 leading-none md:text-start text-white"
       >
         Your crypto
         <br />Social Wallet
@@ -29,18 +29,12 @@ import CenterContainer from "./centerContainer.astro";
 
       <div class="flex flex-col">
         <span
-          class="font-['Helvetica'] text-white max-w-[310px] md:max-w-[592px] text-start text-base font-normal md:text-[20px] leading-[36px] mb-[10px] md:mb-[52px] tracking-1.2 md:tracking-[-0.18px]"
+          class="font-['Helvetica'] text-white max-w-[310px] md:max-w-[400px] mdl:max-w-[592px] text-start text-base md:text-[18px] font-normal mdl:text-[20px] tracking-[-0.18px]"
         >
           An all-in-one social wallet designed to bring the mass adoption of
           crypto, making it accessible and user-friendly for everyone.
         </span>
-        <a
-          href="https://pro.tomo.inc/"
-          target="_blank"
-          class="cursor-pointer bg-[#F21F7F] text-white p-3 px-4 rounded-lg w-[173px] text-center text-base"
-        >
-          Get the app
-        </a>
+
         <!-- <div class="flex justify-center md:justify-start gap-5">
           <a
             class="cursor-pointer"
@@ -115,10 +109,11 @@ import CenterContainer from "./centerContainer.astro";
           </a>
         </div> -->
       </div>
+      <DownloadApp client:load />
     </div>
     <img
       src="/images/hero-right.svg"
-      class="hidden md:block w-1/4 absolute z-20 right-72 top-20"
+      class="hidden md:block w-1/4 absolute z-20 md:right-28 lg:right-72 top-10 mdl:top-20"
     />
   </CenterContainer>
 </main>

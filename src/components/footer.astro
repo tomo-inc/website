@@ -3,27 +3,27 @@ import CenterContainer from "./centerContainer.astro";
 ---
 
 <script is:inline>
-  document
-    .getElementById("termsLink")
-    .setAttribute("href", `${location.origin}/terms`);
-  document
-    .getElementById("privacyLink")
-    .setAttribute("href", `${location.origin}/privacy`);
-  document
-    .getElementById("communityGuidelines")
-    .setAttribute("href", `${location.origin}/communityGuidelines`);
-  document
-    .getElementById("termsLink1")
-    .setAttribute("href", `${location.origin}/terms`);
-  document
-    .getElementById("privacyLink1")
-    .setAttribute("href", `${location.origin}/privacy`);
-  document
-    .getElementById("communityGuidelines1")
-    .setAttribute("href", `${location.origin}/communityGuidelines`);
+  // document
+  //   .getElementById("termsLink")
+  //   .setAttribute("href", `${location.origin}/terms`);
+  // document
+  //   .getElementById("privacyLink")
+  //   .setAttribute("href", `${location.origin}/privacy`);
+  // document
+  //   .getElementById("communityGuidelines")
+  //   .setAttribute("href", `${location.origin}/communityGuidelines`);
+  // document
+  //   .getElementById("termsLink1")
+  //   .setAttribute("href", `${location.origin}/terms`);
+  // document
+  //   .getElementById("privacyLink1")
+  //   .setAttribute("href", `${location.origin}/privacy`);
+  // document
+  //   .getElementById("communityGuidelines1")
+  //   .setAttribute("href", `${location.origin}/communityGuidelines`);
 </script>
 <main
-  class="w-full pb-[64px] md:pb-0 px-6 py-12 md:py-0 md:px-0 relative bg-black"
+  class="w-full pb-[64px] md:pb-0 px-6 py-12 md:py-0 smd:px-0 md:px-6 relative bg-black"
 >
   <CenterContainer class="flex flex-col gap-[16px] md:hidden">
     <div class="flex flex-col gap-5 items-start md:hidden mb-20">
@@ -42,12 +42,21 @@ import CenterContainer from "./centerContainer.astro";
             >
           </a>
           <a
-            href="https://twitter.com/tomo_social"
+            href="https://x.com/tomo_social"
             target="_blank"
             class="cursor-pointer flex gap-[10px]"
           >
             <span class="font-['PopinsNormal'] text-white text-sm tracking-0.8"
-              >X</span
+              >X (Tomo Inc)</span
+            >
+          </a>
+          <a
+            href="https://x.com/tomo_wallet"
+            target="_blank"
+            class="cursor-pointer flex gap-[10px]"
+          >
+            <span class="font-['PopinsNormal'] text-white text-sm tracking-0.8"
+              >X (Tomo Wallet)</span
             >
           </a>
 
