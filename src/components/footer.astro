@@ -5,135 +5,176 @@ import CenterContainer from "./centerContainer.astro";
 <script is:inline></script>
 <main class="w-full pb-[64px] px-6 py-12 md:py-0 md:px-6 relative bg-black">
   <CenterContainer class="flex flex-col gap-[16px] md:hidden">
-    <div class="flex flex-col gap-5 items-start md:hidden mb-20">
+    <div class="flex flex-col gap-5 items-start md:hidden md:mb-20 mb-[52px]">
       <a href="/" class="text-lg flex items-center">
         <img class="h-[31px]" src="/images/logo-footer.svg" alt="" />
       </a>
-      <div class="flex w-full gap-20">
-        <div class="flex flex-col gap-5">
-          <a
-            href="https://www.instagram.com/tomoinc/"
-            target="_blank"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >Instagram</span
+      <div class="flex flex-col">
+        <div class="flex w-full gap-[43px]">
+          <div class="flex flex-col gap-5">
+            <div class="text-white/60 text-[12px]">Follow us</div>
+            <a
+              href="https://www.instagram.com/tomoinc/"
+              target="_blank"
+              class="cursor-pointer flex gap-[10px]"
             >
-          </a>
-          <a
-            href="https://x.com/tomo_social"
-            target="_blank"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >X (Tomo Inc)</span
+              <span class="font-[Helvetica] text-white text-sm tracking-0.8"
+                >Instagram</span
+              >
+            </a>
+            <a
+              href="https://x.com/tomo_social"
+              target="_blank"
+              class="cursor-pointer flex gap-[10px]"
             >
-          </a>
-          <a
-            href="https://x.com/tomo_wallet"
-            target="_blank"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >X (Tomo Wallet)</span
+              <span class="font-[Helvetica] text-white text-sm tracking-0.8"
+                >X (Tomo Inc)</span
+              >
+            </a>
+            <a
+              href="https://x.com/tomo_wallet"
+              target="_blank"
+              class="cursor-pointer flex gap-[10px]"
             >
-          </a>
+              <span class="font-[Helvetica] text-white text-sm tracking-0.8"
+                >X (Tomo Wallet)</span
+              >
+            </a>
 
-          <a
-            href="https://id.tomo.inc/tomo"
-            target="_blank"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >TomoID</span
+            <a
+              href="https://id.tomo.inc/tomo"
+              target="_blank"
+              class="cursor-pointer flex gap-[10px]"
             >
-          </a>
-          <a
-            href="https://medium.com/tomoinc"
-            target="_blank"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >Medium</span
+              <span class="font-[Helvetica] text-white text-sm tracking-0.8"
+                >TomoID</span
+              >
+            </a>
+            <a
+              href="https://medium.com/tomoinc"
+              target="_blank"
+              class="cursor-pointer flex gap-[10px]"
             >
-          </a>
-          <a
-            href="https://www.youtube.com/@Tomo_Social"
-            target="_blank"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >Youtube</span
+              <span class="font-[Helvetica] text-white text-sm tracking-0.8"
+                >Medium</span
+              >
+            </a>
+            <a
+              href="https://www.youtube.com/@Tomo_Social"
+              target="_blank"
+              class="cursor-pointer flex gap-[10px]"
             >
-          </a>
-          <a
-            href="https://t.me/tomoinc"
-            target="_blank"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >Telegram
-            </span>
-          </a>
+              <span class="font-[Helvetica] text-white text-sm tracking-0.8"
+                >Youtube</span
+              >
+            </a>
+            <a
+              href="https://t.me/tomoinc"
+              target="_blank"
+              class="cursor-pointer flex gap-[10px]"
+            >
+              <span class="font-[Helvetica] text-white text-sm tracking-0.8"
+                >Telegram
+              </span>
+            </a>
+          </div>
+          <div class="flex flex-col justify-between">
+            <div class="flex flex-col justify-between gap-5">
+              <div class="text-white/60 text-[12px]">Developer</div>
+              <a
+                href="https://github.com/UnyxTech"
+                target="_blank"
+                class="cursor-pointer flex gap-[10px]"
+              >
+                <span class="font-[Helvetica] text-white text-sm tracking-0.8"
+                  >Github</span
+                >
+              </a>
+              <a
+                href="https://docs.tomo.inc"
+                target="_blank"
+                class="cursor-pointer flex gap-[10px]"
+              >
+                <span class="font-[Helvetica] text-white text-sm tracking-0.8"
+                  >Docs</span
+                >
+              </a>
+            </div>
+            <div class="flex flex-col justify-between gap-5">
+              <div class="text-white/60 text-[12px]">About us</div>
+              <a
+                id="termsLink"
+                target="_blank"
+                href="https://tomo.inc/terms"
+                class="cursor-pointer flex gap-[10px]"
+              >
+                <span class="font-[Helvetica] text-white text-sm tracking-0.8"
+                  >Terms of Service</span
+                >
+              </a>
+              <a
+                id="privacyLink"
+                target="_blank"
+                href="https://tomo.inc/privacy"
+                class="cursor-pointer flex gap-[10px]"
+              >
+                <span class="font-[Helvetica] text-white text-sm tracking-0.8"
+                  >Privacy Policy</span
+                >
+              </a>
+              <a
+                id="communityGuidelines"
+                target="_blank"
+                href="https://tomo.inc/communityGuidelines"
+                class="cursor-pointer flex gap-[10px]"
+              >
+                <span class="font-[Helvetica] text-white text-sm tracking-0.8"
+                  >Community Guidelines</span
+                >
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="flex flex-col gap-5">
-          <a
-            href="https://github.com/UnyxTech"
-            target="_blank"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >Github</span
-            >
-          </a>
-          <a
-            href="https://docs.tomo.inc"
-            target="_blank"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >Docs</span
-            >
-          </a>
-          <!-- <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSe5STuZbI2L2R2eERiz-Js-Ma7i0RB6S1Nv6KVkye0oIBnpmQ/viewform?usp=sf_link"
-            target="_blank"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >Support</span
-            >
-          </a> -->
-          <a
-            id="termsLink"
-            target="_blank"
-            href="https://tomo.inc/terms"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >Terms of Service</span
-            >
-          </a>
-          <a
-            id="privacyLink"
-            target="_blank"
-            href="https://tomo.inc/privacy"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >Privacy Policy</span
-            >
-          </a>
-          <a
-            id="communityGuidelines"
-            target="_blank"
-            href="https://tomo.inc/communityGuidelines"
-            class="cursor-pointer flex gap-[10px]"
-          >
-            <span class="font-[Helvetica] text-white text-sm tracking-0.8"
-              >Community Guidelines</span
-            >
-          </a>
+        <div class="flex flex-col gap-5 mt-[52px]">
+          <div class="text-white/60 text-[12px]">Contact</div>
+          <div class="flex gap-10">
+            <div class="flex flex-col gap-5">
+              <a
+                id="privacyLink1"
+                target="_blank"
+                href="mailto:julianne@tomo.inc,milena@tomo.inc"
+                class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
+              >
+                PR Inquiry
+              </a>
+              <a
+                id="communityGuidelines1"
+                target="_blank"
+                href="mailto:support@tomo.inc"
+                class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
+              >
+                Tech Support
+              </a>
+            </div>
+            <div class="flex flex-col gap-5">
+              <a
+                id="communityGuidelines1"
+                target="_blank"
+                href="mailto:alvaro@tomo.inc"
+                class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
+              >
+                Partnerships
+              </a>
+              <a
+                id="communityGuidelines1"
+                target="_blank"
+                href="mailto:bob@tomo.inc"
+                class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
+              >
+                Others
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -154,13 +195,14 @@ import CenterContainer from "./centerContainer.astro";
     </div>
     <div class="flex gap-16">
       <div class="flex flex-col gap-5">
+        <div class="text-white/60 text-[12px]">Follow us</div>
         <a
           href="https://www.instagram.com/tomoinc/"
           target="_blank"
           class="cursor-pointer flex gap-[10px]"
         >
           <span
-            class="font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+            class="font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
             >Instagram</span
           >
         </a>
@@ -170,7 +212,7 @@ import CenterContainer from "./centerContainer.astro";
           class="cursor-pointer flex gap-[10px]"
         >
           <span
-            class="font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+            class="font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
             >X (Tomo Inc)</span
           >
         </a>
@@ -180,7 +222,7 @@ import CenterContainer from "./centerContainer.astro";
           class="cursor-pointer flex gap-[10px]"
         >
           <span
-            class="font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+            class="font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
             >X (Tomo Wallet)</span
           >
         </a>
@@ -190,7 +232,7 @@ import CenterContainer from "./centerContainer.astro";
           class="cursor-pointer flex gap-[10px]"
         >
           <span
-            class="font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+            class="font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
             >TomoID</span
           >
         </a>
@@ -200,7 +242,7 @@ import CenterContainer from "./centerContainer.astro";
           class="cursor-pointer flex gap-[10px]"
         >
           <span
-            class="font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+            class="font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
             >Medium</span
           >
         </a>
@@ -210,7 +252,7 @@ import CenterContainer from "./centerContainer.astro";
           class="cursor-pointer flex gap-[10px]"
         >
           <span
-            class="font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+            class="font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
             >Youtube
           </span>
         </a>
@@ -220,19 +262,20 @@ import CenterContainer from "./centerContainer.astro";
           class="cursor-pointer flex gap-[10px]"
         >
           <span
-            class="font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+            class="font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
             >Telegram
           </span>
         </a>
       </div>
       <div class="flex flex-col gap-5">
+        <div class="text-white/60 text-[12px]">Developer</div>
         <a
           href="https://docs.tomo.inc"
           target="_blank"
           class="cursor-pointer flex gap-[10px]"
         >
           <span
-            class="font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+            class="font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
             >Docs</span
           >
         </a>
@@ -242,7 +285,7 @@ import CenterContainer from "./centerContainer.astro";
           class="cursor-pointer flex gap-[10px]"
         >
           <span
-            class="font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+            class="font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
             >Github</span
           >
         </a>
@@ -253,17 +296,18 @@ import CenterContainer from "./centerContainer.astro";
           class="cursor-pointer flex gap-[10px]"
         >
           <span
-            class="font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+            class="font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
             >Support</span
           >
         </a> -->
       </div>
       <div class="flex flex-col gap-5">
+        <div class="text-white/60 text-[12px]">About us</div>
         <a
           id="termsLink1"
           target="_blank"
           href="https://tomo.inc/terms"
-          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
         >
           Terms of Service
         </a>
@@ -271,7 +315,7 @@ import CenterContainer from "./centerContainer.astro";
           id="privacyLink1"
           target="_blank"
           href="https://tomo.inc/privacy"
-          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
         >
           Privacy Policy
         </a>
@@ -279,26 +323,19 @@ import CenterContainer from "./centerContainer.astro";
           id="communityGuidelines1"
           target="_blank"
           href="https://tomo.inc/communityGuidelines"
-          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
         >
           Community Guidelines
         </a>
       </div>
 
       <div class="flex flex-col gap-5">
-        <!-- <a
-          id="termsLink1"
-          target="_blank"
-          href="https://tomo.inc/terms"
-          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
-        >
-          Contact
-        </a> -->
+        <div class="text-white/60 text-[12px]">Contact</div>
         <a
           id="privacyLink1"
           target="_blank"
           href="mailto:julianne@tomo.inc,milena@tomo.inc"
-          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
         >
           PR Inquiry
         </a>
@@ -307,7 +344,7 @@ import CenterContainer from "./centerContainer.astro";
           id="communityGuidelines1"
           target="_blank"
           href="mailto:alvaro@tomo.inc"
-          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
         >
           Partnerships
         </a>
@@ -315,7 +352,7 @@ import CenterContainer from "./centerContainer.astro";
           id="communityGuidelines1"
           target="_blank"
           href="mailto:support@tomo.inc"
-          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
         >
           Tech Support
         </a>
@@ -323,7 +360,7 @@ import CenterContainer from "./centerContainer.astro";
           id="communityGuidelines1"
           target="_blank"
           href="mailto:bob@tomo.inc"
-          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[18px] tracking-[0.18px] leading-[125%] font-normal"
+          class="cursor-pointer font-[Helvetica] text-[#EFF0F0] text-[14px] tracking-[0.18px] leading-[125%] font-normal"
         >
           Others
         </a>
