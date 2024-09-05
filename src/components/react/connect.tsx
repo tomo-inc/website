@@ -26,7 +26,7 @@ export const ConnectMenu: React.FC<IProps> = ({ className }) => {
         className={`cursor-pointer font-[Helvetica]  justify-center  bg-[#F21F7F] text-white text-base p-2 px-4 rounded-md md:flex gap-1 md:w-32 h-12 items-center ${className}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        Contact
+        Follow us
         <img src="/images/down-arrow.svg" className="w-[14px]" />
       </div>
 
