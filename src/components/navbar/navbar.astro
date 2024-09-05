@@ -19,6 +19,10 @@ const menuitems = [
     title: "SDK Solutions",
     id: "wallet-mobile-button",
   },
+  {
+    title: "Names Behind",
+    id: "names-behind-mobile-button",
+  },
 ];
 ---
 
@@ -98,17 +102,19 @@ const menuitems = [
 
   walletMobileButton.addEventListener("click", () => scrollTo("sdk-page"));
 
-  // const socialMarketButton = document.getElementById("socialMarket-button");
+  const socialMarketButton = document.getElementById("names-behind-button");
 
-  // socialMarketButton.addEventListener("click", () => scrollTo("social-market"));
+  socialMarketButton.addEventListener("click", () =>
+    scrollTo("investors-page")
+  );
 
-  // const socialMarketMobileButton = document.getElementById(
-  //   "socialMarket-mobile-button"
-  // );
+  const socialMarketMobileButton = document.getElementById(
+    "names-behind-mobile-button"
+  );
 
-  // socialMarketMobileButton.addEventListener("click", () =>
-  //   scrollTo("social-market")
-  // );
+  socialMarketMobileButton.addEventListener("click", () =>
+    scrollTo("investors-page")
+  );
 
   // const tomoIDButton = document.getElementById("tomoID-button");
 
@@ -138,13 +144,13 @@ const menuitems = [
 </script>
 
 <header
-  class="first-container nav-container fixed right-0 left-0 z-30 h-20 py-[18px] mdl:py-0 mdl:px-6 mdl:flex xl:px-[80px]"
+  class="first-container nav-container fixed right-0 left-0 z-30 h-16 md:h-20 py-[18px] mdl:py-0 mdl:px-6 mdl:flex xl:px-[80px]"
 >
   <Astronav class="w-full">
     <div class="flex w-full items-center justify-center mdl:justify-between">
       <div class="flex items-center gap-24">
         <a href="/" class="text-lg flex items-center pl-4 mdl:pl-0 gap-[10px]">
-          <img class="h-6 mdl:h-[32px]" src="/images/logo.svg" alt="" />
+          <img class="h-8" src="/images/logo.svg" alt="" />
           <!-- <span class="font-[Kufam] leading-none">TOMO Inc.</span> -->
         </a>
         <div class="gap-9 hidden mdl:flex">
@@ -180,6 +186,13 @@ const menuitems = [
               onclick="scrollTo">SDK Solutions</span
             >
           </div>
+          <div class="cursor-pointer hidden md:block">
+            <span
+              class="font-['Helvetica'] text-normal text-base"
+              id="names-behind-button"
+              onclick="scrollTo">Names Behind</span
+            >
+          </div>
         </div>
       </div>
 
@@ -210,7 +223,7 @@ const menuitems = [
                   <div
                     id={item.id}
                     onclick="scrollTo"
-                    class={`flex lg:px-3  text-[#010639] tracking-[0.5px] hover:text-gray-600 justify-start font-['PopinsMedium']`}
+                    class={`flex lg:px-3  text-[#010639] tracking-[0.5px] hover:text-gray-600 justify-start font-[Helvetica]`}
                   >
                     {item.title}
                   </div>
@@ -220,7 +233,7 @@ const menuitems = [
           }
         </ul>
         <div
-          class="mdl:hidden h-14 font-['PopinsMedium'] border-t-[1px] border-solid border-[#595959] mt-4 pt-8 flex justify-center gap-5 pb-8"
+          class="mdl:hidden h-14 font-[Helvetica] border-t-[1px] border-solid border-[#595959] mt-4 pt-8 flex justify-center gap-5 pb-8"
         >
           <a
             href="https://pro.tomo.inc/"

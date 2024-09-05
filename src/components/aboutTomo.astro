@@ -9,12 +9,9 @@ import CenterContainer from "./centerContainer.astro";
 </script>
 
 <div id="about-page"></div>
-<main
-  class="h-[unset] smd:pt-32 md:pb-32 relative sm:bg-cover"
-  data-aos="fade-up"
->
+<main class="h-[unset] pt-24 smd:pt-32 relative sm:bg-cover" data-aos="fade-up">
   <CenterContainer
-    class="w-full flex flex-col mdl:flex-row justify-center md:gap-8 mdl:gap-[40px] lg:gap-[100px] items-center md:flex px-4"
+    class="w-full flex flex-col mdl:flex-row justify-center gap-8 mdl:gap-[40px] lg:gap-[100px] items-center md:flex px-4"
   >
     <div class="flex flex-col items-start gap-7 mdl:gap-8 font-[Helvetica]">
       <div class="flex flex-col items-start">
@@ -30,18 +27,22 @@ import CenterContainer from "./centerContainer.astro";
         </div>
       </div>
       <div class="mdl:max-w-[454px] md:max-w-[300px] text-sm mdl:text-base">
-        Lightweight, multichain, and earn on the go-Tomo Bot keeps you ahead
-        effortlessly.
+        Earn on the go with Tomo Bot- this lightweight, multichain wallet keeps
+        you effortlessly ahead.
       </div>
       <a
         href="https://t.me/tomowalletbot"
         target="_blank"
-        class="cursor-pointer bg-[#F21F7F] text-white p-3 px-4 rounded-lg text-center text-base"
+        class="cursor-pointer bg-[#F21F7F] font-semibold text-white p-3 px-4 rounded-lg text-center text-base flex items-center gap-[10px]"
       >
-        Learn More
+        <img src="/images/launch-icon.svg" />
+        Launch
       </a>
     </div>
-    <img src="/images/about-right.svg" />
+    <img
+      src="/images/about-right.png"
+      class="max-w-[390px] mdl:max-w-[530px]"
+    />
 
     <!-- <div
       class="text-center font-['PopinsSemiBold'] text-[28px] md:text-5xl leading-[120%] mb-3 md:mb-4"

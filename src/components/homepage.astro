@@ -4,21 +4,13 @@ import { DownloadApp } from "./react/downloadApp";
 ---
 
 <main
-  class="h-[630px] smd:h-[400px] md:h-[450px] mdl:h-[600px] lg:h-[765px] backdrop-blur-sm mt-[65px] md:mt-[100px] mdl:mt-[122px] mx-5 md:mx-8 relative bg-cover sm:bg-cover bg-[unset] smd:bg-[url('/images/bg-img.png')] md:bg-[url(unset)] rounded-[20px]"
+  class="backdrop-blur-sm mt-[65px] md:mt-[100px] mdl:mt-[122px] p-5 smd:p-10 md:p-20 mdl:p-32 mx-5 md:mx-8 bg-cover sm:bg-cover bg-[unset] bg-[url('/images/mobile-bg-img.png')] smd:bg-[url('/images/bg-img.png')] rounded-[20px]"
 >
-  <img
-    src="/images/bg-img.png"
-    class="hidden md:block absolute top-0 left-0 right-0 bottom-0 w-full"
-  />
-  <img
-    src="/images/mobile-bg-img.png"
-    class="smd:hidden absolute top-0 left-0 right-0 bottom-0 w-full"
-  />
   <CenterContainer
-    class="w-full flex flex-col md:block px-[16px] !h-[unset] items-center"
+    class="w-full flex flex-col md:flex-row px-[16px] !h-[unset] items-center mdl:gap-[100px] md:gap-20 smd:gap-10"
   >
     <div
-      class="flex flex-col items-start justify-start translate-y-[70%] smd:translate-y-[30%] md:translate-y-[20%] lg:translate-y-[30%] absolute md:z-10 md:t-[-20px] gap-6 md:gap-8"
+      class="flex flex-col items-start justify-start md:t-[-20px] gap-6 md:gap-8 mt-40 smd:mt-0"
     >
       <h1
         class="font-['Helvetica'] text-start text-[40px] md:text-6xl mdl:text-8xl font-bold tracking-1.8 md:tracking-3.2 leading-none md:text-start text-white"
@@ -111,9 +103,6 @@ import { DownloadApp } from "./react/downloadApp";
       </div>
       <DownloadApp client:load />
     </div>
-    <img
-      src="/images/hero-right.svg"
-      class="hidden md:block w-1/4 absolute z-20 md:right-28 lg:right-72 top-10 mdl:top-20"
-    />
+    <img src="/images/hero-right.svg" class="hidden md:block w-2/5" />
   </CenterContainer>
 </main>

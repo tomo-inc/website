@@ -40,7 +40,7 @@
   position: absolute;
   width: 100%;
   height: calc(100% * 2);
-  animation: scroll-up 20s linear infinite;
+  animation: scroll-up 10s linear infinite;
 }
 
 .scroll-item {
@@ -89,4 +89,22 @@
 
 .-translate-y-2 {
   transform: translateY(-0.5rem); /* 0.5rem equals to 8px */
+}
+
+.vertical-marquee-container {
+  width: 150px;
+  height: 300px; /* Adjust based on your requirements */
+  overflow: hidden;
+  position: relative;
+}
+
+.vertical-marquee-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.marquee-image {
+  width: 100%;
+  height: auto;
 }

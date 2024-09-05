@@ -23,7 +23,7 @@ export const DownloadApp: React.FC<IProps> = ({ className }) => {
   return (
     <div className="relative flex-1" ref={menuRef}>
       <div
-        className={`cursor-pointer font-[Helvetica]  justify-center  bg-[#F21F7F] text-white text-base p-4 rounded-md w-44  text-center  ${className}`}
+        className={`cursor-pointer font-[Helvetica] font-semibold  justify-center  bg-[#F21F7F] text-white text-base p-4 rounded-md w-44  text-center  ${className}`}
         onClick={() => setIsOpen(!isOpen)}
       >
         Download App
