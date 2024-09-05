@@ -1,6 +1,6 @@
 import "./infiniteLooper.css";
 import { Marquee } from "@devnomic/marquee";
-import "@devnomic/marquee/dist/index.css";
+import "./carousel.css";
 
 const images = [
   "/images/carousel1.svg",
