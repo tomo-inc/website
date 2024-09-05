@@ -310,9 +310,9 @@ video {
   --tw-backdrop-saturate: ;
   --tw-backdrop-sepia: ;
 }
-.flex {
+/* .flex {
   display: flex;
-}
+} */
 .shrink-0 {
   flex-shrink: 0;
 }

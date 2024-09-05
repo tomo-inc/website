@@ -19,10 +19,10 @@ const menuitems = [
     title: "SDK Solutions",
     id: "wallet-mobile-button",
   },
-  {
-    title: "Names Behind",
-    id: "names-behind-mobile-button",
-  },
+  // {
+  //   title: "Names Behind",
+  //   id: "names-behind-mobile-button",
+  // },
 ];
 ---
 
@@ -102,19 +102,19 @@ const menuitems = [
 
   walletMobileButton.addEventListener("click", () => scrollTo("sdk-page"));
 
-  const socialMarketButton = document.getElementById("names-behind-button");
+  // const socialMarketButton = document.getElementById("names-behind-button");
 
-  socialMarketButton.addEventListener("click", () =>
-    scrollTo("investors-page")
-  );
+  // socialMarketButton.addEventListener("click", () =>
+  //   scrollTo("investors-page")
+  // );
 
-  const socialMarketMobileButton = document.getElementById(
-    "names-behind-mobile-button"
-  );
+  // const socialMarketMobileButton = document.getElementById(
+  //   "names-behind-mobile-button"
+  // );
 
-  socialMarketMobileButton.addEventListener("click", () =>
-    scrollTo("investors-page")
-  );
+  // socialMarketMobileButton.addEventListener("click", () =>
+  //   scrollTo("investors-page")
+  // );
 
   // const tomoIDButton = document.getElementById("tomoID-button");
 
@@ -186,13 +186,6 @@ const menuitems = [
               onclick="scrollTo">SDK Solutions</span
             >
           </div>
-          <div class="cursor-pointer hidden md:block">
-            <span
-              class="font-['Helvetica'] text-normal text-base"
-              id="names-behind-button"
-              onclick="scrollTo">Names Behind</span
-            >
-          </div>
         </div>
       </div>
 
@@ -213,7 +206,7 @@ const menuitems = [
     </div>
     <div id="menu-items" class="mdl:hidden">
       <MenuItems
-        class="hidden h-screen w-screen bg-[#FCEFEB] mdl:w-auto mt-2 mdl:flex mdl:mt-0 text-base leading-[22px] text-[#010639] tracking-[0.5px] font-bold px-5"
+        class="hidden h-screen w-screen bg-[#FCEFEB] mdl:w-auto mt-2 mdl:flex mdl:mt-0 text-base leading-[22px] text-[#010639] tracking-[0.5px] font-normal px-5"
       >
         <ul class="flex flex-col pt-12 mdl:hidden gap-12">
           {
@@ -233,7 +226,7 @@ const menuitems = [
           }
         </ul>
         <div
-          class="mdl:hidden h-14 font-[Helvetica] border-t-[1px] border-solid border-[#595959] mt-4 pt-8 flex justify-center gap-5 pb-8"
+          class="mdl:hidden h-14 font-[Helvetica] border-t-[1px] border-solid border-[#595959] mt-12 pt-10 flex justify-center gap-5 pb-8"
         >
           <a
             href="https://pro.tomo.inc/"

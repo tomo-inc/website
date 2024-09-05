@@ -4,102 +4,28 @@ import { DownloadApp } from "./react/downloadApp";
 ---
 
 <main
-  class="backdrop-blur-sm mt-[65px] md:mt-[100px] mdl:mt-[122px] p-5 smd:p-10 md:p-20 mdl:p-32 mx-5 md:mx-8 bg-cover sm:bg-cover bg-[unset] bg-[url('/images/mobile-bg-img.png')] smd:bg-[url('/images/bg-img.png')] rounded-[20px]"
+  class="backdrop-blur-sm mt-[65px] md:mt-[100px] mdl:mt-24 p-5 smd:p-10 md:p-20 lg:p-32 mx-5 md:mx-8 bg-cover sm:bg-cover bg-[unset] bg-[url('/images/mobile-bg-img.png')] md:bg-[url('/images/bg-img.png')] rounded-[20px]"
 >
   <CenterContainer
-    class="w-full flex flex-col md:flex-row px-[16px] !h-[unset] items-center mdl:gap-[100px] md:gap-20 smd:gap-10"
+    class="!max-w-[1385px] w-full flex flex-col md:flex-row px-[16px] !h-[unset] items-center mdl:gap-[100px] md:gap-20 smd:gap-10"
   >
     <div
-      class="flex flex-col items-start justify-start md:t-[-20px] gap-6 md:gap-8 mt-40 smd:mt-0"
+      class="flex flex-col items-start justify-start md:t-[-20px] gap-6 md:gap-8 mt-56 md:mt-0"
     >
       <h1
         class="font-['Helvetica'] text-start text-[40px] md:text-6xl mdl:text-8xl font-bold tracking-1.8 md:tracking-3.2 leading-none md:text-start text-white"
       >
-        Your crypto
-        <br />Social Wallet
+        Your Favorite<br />
+        Crypto Social Wallet
+        <!-- < br /> -->
       </h1>
 
       <div class="flex flex-col">
         <span
           class="font-['Helvetica'] text-white max-w-[310px] md:max-w-[400px] mdl:max-w-[592px] text-start text-base md:text-[18px] font-normal mdl:text-[20px] tracking-[-0.18px]"
         >
-          An all-in-one social wallet designed to bring the mass adoption of
-          crypto, making it accessible and user-friendly for everyone.
+          The all-in-one wallet designed to bring the mass adoption…
         </span>
-
-        <!-- <div class="flex justify-center md:justify-start gap-5">
-          <a
-            class="cursor-pointer"
-            target="_blank"
-            href="https://play.google.com/store/apps/details?id=tomo.app.unyx"
-          >
-            <img
-              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-              src="/images/google-play.svg"
-              alt=""
-            />
-          </a>
-          <a
-            class="cursor-pointer"
-            target="_blank"
-            href="https://apps.apple.com/us/app/tomo-inc/id6468010287"
-          >
-            <img
-              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-              src="/images/app-store.svg"
-              alt="app store"
-            />
-          </a>
-          <a
-            class="cursor-pointer md:block hidden"
-            target="_blank"
-            href="https://pub-6c52100fa9ac41f681f0713eac878541.r2.dev/app-prod-release.apk"
-          >
-            <img
-              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-              src="/images/android.svg"
-              alt="apk"
-            />
-          </a>
-          <a
-            class="cursor-pointer md:block hidden"
-            target="_blank"
-            href="https://chromewebstore.google.com/detail/tomo-wallet/pfccjkejcgoppjnllalolplgogenfojk"
-          >
-            <img
-              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-              src="/images/chrome.svg"
-              alt="chrome"
-            />
-          </a>
-        </div>
-        <div
-          class="flex justify-center md:justify-start gap-5 mt-[16px] md:hidden"
-        >
-          <a
-            class="cursor-pointer"
-            target="_blank"
-            href="https://pub-6c52100fa9ac41f681f0713eac878541.r2.dev/app-prod-release.apk"
-          >
-            <img
-              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-              src="/images/android.svg"
-              alt="apk"
-            />
-          </a>
-
-          <a
-            class="cursor-pointer"
-            target="_blank"
-            href="https://chromewebstore.google.com/detail/tomo-wallet/pfccjkejcgoppjnllalolplgogenfojk"
-          >
-            <img
-              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-              src="/images/chrome.svg"
-              alt="chrome"
-            />
-          </a>
-        </div> -->
       </div>
       <DownloadApp client:load />
     </div>

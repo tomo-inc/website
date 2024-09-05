@@ -1,5 +1,7 @@
 import { Marquee } from "@devnomic/marquee";
 
+const images = ["/images/investor.png"];
+
 export const Investor: React.FC = () => {
   return (
     <Marquee
@@ -7,11 +9,18 @@ export const Investor: React.FC = () => {
       direction="left"
       reverse={false}
       pauseOnHover={false}
-      className="max-h-[156px]" // pass class to change gap or speed
+      className="max-h-[100px] md:max-h-[156px]" // pass class to change gap or speed
       innerClassName=""
     >
-      <img src="/images/investor.png" />
-      <img src="/images/investor.png" />
+      {images.concat(images).map((image, index) => (
+        <div key={index} className="max-h-[100px] md:max-h-[156px]">
+          <img
+            className="max-h-[100px] md:max-h-[156px]"
+            src={image}
+            alt={`Scrolling content ${index}`}
+          />
+        </div>
+      ))}
     </Marquee>
   );
 };
