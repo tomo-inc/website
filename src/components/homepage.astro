@@ -1,132 +1,34 @@
 ---
 import CenterContainer from "./centerContainer.astro";
+import { DownloadApp } from "./react/downloadApp";
 ---
 
 <main
-  class="h-[123.1vw] md:h-[965px] bg-background mt-[65px] md:mt-0 relative bg-cover sm:bg-cover"
+  class="backdrop-blur-sm mt-[65px] md:mt-[100px] mdl:mt-24 p-5 smd:p-10 md:p-20 lg:p-32 mx-5 md:mx-8 bg-cover sm:bg-cover bg-[unset] bg-[url('/images/mobile-bg-img.png')] md:bg-[url('/images/bg-img.png')] rounded-[20px]"
 >
-  <!--<video-->
-  <!--  src="/images/hero_bg_2.mp4"-->
-  <!--  class="hidden md:block absolute top-0 left-0 right-0 bottom-0 w-full"-->
-  <!--  autoplay-->
-  <!--  playsinline-->
-  <!--  loop-->
-  <!--  muted></video>-->
-  <img
-        src="/images/bg-0726.png"
-        class="hidden md:block absolute top-0 left-0 right-0 bottom-0 w-full"/>
-  <img
-      src="/images/mobile-bg-0726.png"
-      class="absolute md:hidden top-0 left-0 right-0 bottom-0 w-full"
-  ></img>
-  <!--<video-->
-  <!--  id="video-input"-->
-  <!--  src="/images/hero-mobile-bg.mp4"-->
-  <!--  class="absolute md:hidden top-0 left-0 right-0 bottom-0 w-full"-->
-  <!--  autoplay-->
-  <!--  playsinline-->
-  <!--  loop-->
-  <!--  muted></video>-->
   <CenterContainer
-    class="w-full flex flex-col md:block px-[16px] !h-[unset] items-center"
+    class="!max-w-[1385px] w-full flex flex-col md:flex-row px-[16px] !h-[unset] items-center mdl:gap-[100px] md:gap-20 smd:gap-10"
   >
     <div
-      class="bg-white h-[322px] w-[330px] md:h-[659px] md:w-[751px] filter blur-[150px] md:p-6 translate-y-[10%] md:translate-y-[10%] md:absolute md:z-10 md:t-[-20px]"
+      class="flex flex-col items-start justify-start md:t-[-20px] gap-6 md:gap-8 mt-56 md:mt-0"
     >
-    </div>
-    <div
-      class="flex flex-col justify-start translate-y-[25%] md:translate-y-[30%] absolute md:z-10 md:t-[-20px]"
-    >
-      <div class="mb-[21px] md:mb-[43px] flex justify-center md:justify-start">
-        <img class="h-6 md:h-[50px] md:ml-4" src="/images/logo.svg" alt="" />
-      </div>
-
       <h1
-        class="font-['PoppinsExtraBold'] text-[44px] md:text-[100px] md:font-semibold tracking-1.8 md:tracking-3.2 leading-[150%] md:leading-[120px] text-center md:text-left"
+        class="font-['Helvetica'] text-start text-[40px] md:text-6xl mdl:text-8xl font-bold tracking-1.8 md:tracking-3.2 leading-none md:text-start text-white"
       >
-        All-in-One
-        <br />Social Wallet
+        Your Favorite<br />
+        Crypto Social Wallet
+        <!-- < br /> -->
       </h1>
 
       <div class="flex flex-col">
         <span
-          class="font-['DMSansMedium'] text-center md:text-start text-normal text-base font-light md:text-[20px] leading-[36px] mb-[10px] md:mb-[52px] tracking-1.2 md:tracking-1.2"
+          class="font-['Helvetica'] text-white max-w-[310px] md:max-w-[400px] mdl:max-w-[592px] text-start text-base md:text-[18px] font-normal mdl:text-[20px] tracking-[-0.18px]"
         >
-          Connect, Create, and Earn
+          The all-in-one wallet designed to bring the mass adoption…
         </span>
-        <div class="flex justify-center md:justify-start gap-5">
-          <a
-            class="cursor-pointer"
-            target="_blank"
-            href="https://play.google.com/store/apps/details?id=tomo.app.unyx"
-          >
-            <img
-              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-              src="/images/google-play.svg"
-              alt=""
-            />
-          </a>
-          <a
-            class="cursor-pointer"
-            target="_blank"
-            href="https://apps.apple.com/us/app/tomo-inc/id6468010287"
-          >
-            <img
-              class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-              src="/images/app-store.svg"
-              alt="app store"
-            />
-          </a>
-          <a
-              class="cursor-pointer md:block hidden"
-              target="_blank"
-              href="https://pub-6c52100fa9ac41f681f0713eac878541.r2.dev/app-prod-release.apk"
-          >
-            <img
-                class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-                src="/images/android.svg"
-                alt="apk"
-            />
-          </a>
-          <a
-              class="cursor-pointer md:block hidden"
-              target="_blank"
-              href="https://chromewebstore.google.com/detail/tomo-wallet/pfccjkejcgoppjnllalolplgogenfojk"
-          >
-            <img
-                class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-                src="/images/chrome.svg"
-                alt="chrome"
-            />
-          </a>
-        </div>
-        <div class="flex justify-center md:justify-start gap-5 mt-[16px] md:hidden">
-          <a
-              class="cursor-pointer"
-              target="_blank"
-              href="https://pub-6c52100fa9ac41f681f0713eac878541.r2.dev/app-prod-release.apk"
-          >
-            <img
-                class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-                src="/images/android.svg"
-                alt="apk"
-            />
-          </a>
-
-          <a
-              class="cursor-pointer"
-              target="_blank"
-              href="https://chromewebstore.google.com/detail/tomo-wallet/pfccjkejcgoppjnllalolplgogenfojk"
-          >
-            <img
-                class="max-w-[140px] max-h-[40px] md:max-w-[unset] md:max-h-[unset] md:w-[179px] md:h-[48px]"
-                src="/images/chrome.svg"
-                alt="chrome"
-            />
-          </a>
-        </div>
-
       </div>
+      <DownloadApp client:load />
     </div>
+    <img src="/images/hero-right.svg" class="hidden md:block w-2/5" />
   </CenterContainer>
 </main>

@@ -1,39 +1,28 @@
 ---
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { ConnectMenu } from "../react/connect";
 
 const menuitems = [
   {
-    title: "About",
+    title: "Telegram Bot",
     id: "about-mobile-button",
   },
   {
-    title: "Our Backers",
+    title: "Tomo App",
     id: "investors-mobile-button",
   },
   {
-    title: "Tomoji",
+    title: "Extension",
     id: "tomoji-mobile-button",
   },
   {
-    title: "Tomo Wallet",
+    title: "SDK Solutions",
     id: "wallet-mobile-button",
   },
-  {
-    title: "Social Capital Market",
-    id: "socialMarket-mobile-button",
-  },
-  {
-    title: "Tomo ID",
-    id: "tomoID-mobile-button",
-  },
   // {
-  //   title: "Tomo Vision",
-  //   id: "visionPro-mobile-button",
+  //   title: "Names Behind",
+  //   id: "names-behind-mobile-button",
   // },
-  {
-    title: "Tomo Points",
-    id: "points-mobile-button",
-  },
 ];
 ---
 
@@ -45,10 +34,20 @@ const menuitems = [
 
       var navContainer = document.querySelector(".nav-container");
 
-      if (scrollTop >= height - 40) {
-        navContainer.classList.add("bg-white", "drop-shadow-lg");
+      if (scrollTop >= height - 60) {
+        navContainer.classList.add(
+          "bg-background",
+          "mdl:bg-background",
+          "backdrop-blur-sm",
+          "drop-shadow-lg"
+        );
       } else {
-        navContainer.classList.remove("bg-white", "drop-shadow-lg");
+        navContainer.classList.remove(
+          "bg-background",
+          "mdl:bg-background",
+          "backdrop-blur-sm",
+          "drop-shadow-lg"
+        );
       }
     });
   });
@@ -79,77 +78,80 @@ const menuitems = [
     "investors-mobile-button"
   );
 
-  investorsMobileButton.addEventListener("click", () =>
-    scrollTo("investors-page")
-  );
+  investorsMobileButton.addEventListener("click", () => scrollTo("tomo-app"));
 
   const investorsButton = document.getElementById("investors-button");
 
-  investorsButton.addEventListener("click", () => scrollTo("investors-page"));
+  investorsButton.addEventListener("click", () => scrollTo("tomo-app"));
 
   const tomojiButton = document.getElementById("tomoji-button");
 
-  tomojiButton.addEventListener("click", () => scrollTo("tomoji"));
+  tomojiButton.addEventListener("click", () => scrollTo("extension-page"));
 
   const tomojiMobileButton = document.getElementById("tomoji-mobile-button");
 
-  tomojiMobileButton.addEventListener("click", () => scrollTo("tomoji"));
+  tomojiMobileButton.addEventListener("click", () =>
+    scrollTo("extension-page")
+  );
 
   const walletButton = document.getElementById("wallet-button");
 
-  walletButton.addEventListener("click", () => scrollTo("wallet-page"));
+  walletButton.addEventListener("click", () => scrollTo("sdk-page"));
 
   const walletMobileButton = document.getElementById("wallet-mobile-button");
 
-  walletMobileButton.addEventListener("click", () => scrollTo("wallet-page"));
+  walletMobileButton.addEventListener("click", () => scrollTo("sdk-page"));
 
-  const socialMarketButton = document.getElementById("socialMarket-button");
+  // const socialMarketButton = document.getElementById("names-behind-button");
 
-  socialMarketButton.addEventListener("click", () => scrollTo("social-market"));
+  // socialMarketButton.addEventListener("click", () =>
+  //   scrollTo("investors-page")
+  // );
 
-  const socialMarketMobileButton = document.getElementById(
-    "socialMarket-mobile-button"
-  );
+  // const socialMarketMobileButton = document.getElementById(
+  //   "names-behind-mobile-button"
+  // );
 
-  socialMarketMobileButton.addEventListener("click", () =>
-    scrollTo("social-market")
-  );
+  // socialMarketMobileButton.addEventListener("click", () =>
+  //   scrollTo("investors-page")
+  // );
 
-  const tomoIDButton = document.getElementById("tomoID-button");
+  // const tomoIDButton = document.getElementById("tomoID-button");
 
-  tomoIDButton.addEventListener("click", () => scrollTo("tomoID"));
+  // tomoIDButton.addEventListener("click", () => scrollTo("tomoID"));
 
-  const tomoIDMobileButton = document.getElementById("tomoID-mobile-button");
+  // const tomoIDMobileButton = document.getElementById("tomoID-mobile-button");
 
-  tomoIDMobileButton.addEventListener("click", () => scrollTo("tomoID"));
+  // tomoIDMobileButton.addEventListener("click", () => scrollTo("tomoID"));
 
-  const visionProButton = document.getElementById("visionPro-button");
+  // const visionProButton = document.getElementById("visionPro-button");
 
-  visionProButton?.addEventListener("click", () => scrollTo("visionPro"));
+  // visionProButton.addEventListener("click", () => scrollTo("visionPro"));
 
-  const visionProMobileButton = document.getElementById(
-    "visionPro-mobile-button"
-  );
+  // const visionProMobileButton = document.getElementById(
+  //   "visionPro-mobile-button"
+  // );
 
-  visionProMobileButton?.addEventListener("click", () => scrollTo("visionPro"));
+  // visionProMobileButton.addEventListener("click", () => scrollTo("visionPro"));
 
-  const pointsButton = document.getElementById("points-button");
+  // const pointsButton = document.getElementById("points-button");
 
-  pointsButton.addEventListener("click", () => scrollTo("points"));
+  // pointsButton.addEventListener("click", () => scrollTo("points"));
 
-  const pointsMobileButton = document.getElementById("points-mobile-button");
+  // const pointsMobileButton = document.getElementById("points-mobile-button");
 
-  pointsMobileButton.addEventListener("click", () => scrollTo("points"));
+  // pointsMobileButton.addEventListener("click", () => scrollTo("points"));
 </script>
 
 <header
-  class="first-container nav-container fixed right-0 left-0 z-30 h-65 py-[18px] mdl:py-0 mdl:px-6 mdl:flex xl:px-[120px] bg-[rgba(255,255,255,0.97)] mdl:bg-white"
+  class="first-container nav-container fixed right-0 left-0 z-30 h-16 md:h-20 py-[18px] mdl:py-0 mdl:px-6 mdl:flex xl:px-[80px]"
 >
   <Astronav class="w-full">
-    <div class="flex w-full items-center justify-between">
+    <div class="flex w-full items-center justify-center mdl:justify-between">
       <div class="flex items-center gap-24">
-        <a href="/" class="text-lg flex items-center pl-4 mdl:pl-0">
-          <img class="h-[32px] mdl:h-[32px]" src="/images/logo.svg" alt="" />
+        <a href="/" class="text-lg flex items-center pl-4 mdl:pl-0 gap-[10px]">
+          <img class="h-8" src="/images/logo.svg" alt="" />
+          <!-- <span class="font-[Kufam] leading-none">TOMO Inc.</span> -->
         </a>
         <div class="gap-9 hidden mdl:flex">
           <div
@@ -157,9 +159,8 @@ const menuitems = [
             id="about-button"
             onclick="scrollTo"
           >
-            <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
-              >About</span
+            <span class="font-['Helvetica'] text-normal text-base"
+              >Telegram Bot</span
             >
           </div>
           <div
@@ -167,82 +168,47 @@ const menuitems = [
             id="investors-button"
             onclick="scrollTo"
           >
-            <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
-              >Our Backers</span
+            <span class="font-['Helvetica'] text-normal text-base"
+              >Tomo App</span
             >
           </div>
           <div class="cursor-pointer hidden mdl:block">
             <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
+              class="font-['Helvetica'] text-normal text-base"
               id="tomoji-button"
-              onclick="scrollTo">Tomoji</span
+              onclick="scrollTo">Extension</span
             >
           </div>
           <div class="cursor-pointer hidden md:block">
             <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
+              class="font-['Helvetica'] text-normal text-base"
               id="wallet-button"
-              onclick="scrollTo">Wallet</span
-            >
-          </div>
-          <div class="cursor-pointer hidden md:block">
-            <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
-              id="socialMarket-button"
-              onclick="scrollTo">Social Market</span
-            >
-          </div>
-          <div class="cursor-pointer hidden md:block">
-            <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
-              id="tomoID-button"
-              onclick="scrollTo">Tomo ID</span
-            >
-          </div>
-          <!-- <div class="cursor-pointer hidden md:block">
-            <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
-              id="visionPro-button"
-              onclick="scrollTo">Vision Pro</span
-            >
-          </div> -->
-          <div class="cursor-pointer hidden md:block">
-            <span
-              class="font-['PopinsMedium'] text-normal text-base font-medium"
-              id="points-button"
-              onclick="scrollTo">Points</span
+              onclick="scrollTo">SDK Solutions</span
             >
           </div>
         </div>
       </div>
 
-      <div class="block mdl:hidden pr-4" id="asd">
+      <div class="block mdl:hidden pr-4 absolute left-5" id="asd">
         <MenuIcon class="w-5 h-5 text-gray-800" />
       </div>
 
       <div class="hidden mdl:flex items-center gap-4">
         <a
-          href="https://id.tomo.inc/tomo"
+          href="https://docs.tomo.inc/"
           target="_blank"
-          class="cursor-pointer hidden mdl:flex border border-solid border-[#121212] text-sm p-2 px-4 rounded-full felx gap-1"
+          class="cursor-pointer hidden mdl:flex md:w-[103px] justify-center items-center border border-solid border-[#121212] bg-black text-white text-base h-12 p-2 px-4 rounded-md felx gap-1"
         >
-          Tomo ID
+          Docs
         </a>
-        <a
-          href="https://pro.tomo.inc/"
-          target="_blank"
-          class="cursor-pointer hidden mdl:flex border border-solid border-[#121212] bg-black text-white text-sm p-2 px-4 rounded-full felx gap-1"
-        >
-          Launch App
-        </a>
+        <ConnectMenu client:load className="hidden mdl:flex" />
       </div>
     </div>
-    <div id="menu-items">
+    <div id="menu-items" class="mdl:hidden">
       <MenuItems
-        class="hidden w-screen mdl:w-auto mt-2 mdl:flex mdl:mt-0 text-base leading-[22px] text-[#010639] tracking-[0.5px] font-bold bg-[rgba(255,255,255,0.97)] px-5"
+        class="hidden h-screen w-screen bg-[#FCEFEB] mdl:w-auto mt-2 mdl:flex mdl:mt-0 text-base leading-[22px] text-[#010639] tracking-[0.5px] font-normal px-5"
       >
-        <ul class="flex flex-col items-center mt-4 mdl:hidden">
+        <ul class="flex flex-col pt-12 mdl:hidden gap-12">
           {
             menuitems.map((item, index) => (
               <>
@@ -250,7 +216,7 @@ const menuitems = [
                   <div
                     id={item.id}
                     onclick="scrollTo"
-                    class={`flex lg:px-3 py-4 text-[#010639] tracking-[0.5px] hover:text-gray-600 justify-start font-['PopinsMedium']`}
+                    class={`flex lg:px-3  text-[#010639] tracking-[0.5px] hover:text-gray-600 justify-start font-[Helvetica]`}
                   >
                     {item.title}
                   </div>
@@ -260,22 +226,16 @@ const menuitems = [
           }
         </ul>
         <div
-          class="mdl:hidden font-['PopinsMedium'] px-6 border-t-[1px] border-solid border-[#F2F2F2] mt-4 pt-8 flex justify-center gap-8 pb-8"
+          class="mdl:hidden h-14 font-[Helvetica] border-t-[1px] border-solid border-[#595959] mt-12 pt-10 flex justify-center gap-5 pb-8"
         >
           <a
-            href="https://id.tomo.inc/tomo"
-            target="_blank"
-            class="cursor-pointer border border-solid border-[#121212] text-sm leading-[18px] p-2 px-4 rounded-full felx gap-1"
-          >
-            TomoID
-          </a>
-          <!-- <a
             href="https://pro.tomo.inc/"
             target="_blank"
-            class="cursor-pointer border border-solid border-[#121212] bg-black text-white text-sm leading-[18px] p-2 px-4 rounded-full felx gap-1"
+            class="cursor-pointer w-[calc((100%-20px)/2)] h-12 flex mdl:hidden md:w-32 justify-center items-center border border-solid border-[#121212] bg-black text-white text-base p-2 px-4 rounded-md felx gap-1"
           >
-            Launch App
-          </a> -->
+            Docs
+          </a>
+          <ConnectMenu client:load className="'mdl:hidden flex flex-1" />
         </div>
       </MenuItems>
     </div>

@@ -5,8 +5,9 @@ module.exports = {
   theme: {
     screens: {
       sm: "376px",
-      md: "1025px",
-      mdl: "1300px",
+      smd: "425px",
+      md: "768px",
+      mdl: "1000px",
       lg: "1460px",
       xl: "1580px",
       "2xl": "1636px",
@@ -35,7 +36,8 @@ module.exports = {
         pink: "#8967E7",
         gray: "#F9F9F9",
         black: "#000000",
-        background: "#F8FAFC",
+        background: "rgba(252,239,235,0.8)",
+        primary: "#F21F7F",
       },
       fontSize: {
         64: "64px",

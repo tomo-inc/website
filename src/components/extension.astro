@@ -1,0 +1,39 @@
+---
+import CenterContainer from "./centerContainer.astro";
+---
+
+<script>
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+  AOS.init({ duration: 1000 });
+</script>
+
+<div id="extension-page"></div>
+<main
+  class="h-[unset] md:pt-32 pt-24 relative sm:bg-cover bg-background"
+  data-aos="fade-up"
+>
+  <CenterContainer
+    class="w-full flex flex-col mdl:flex-row justify-center gap-[48px] mdl:gap-10 lg:gap-[100px] items-center px-4"
+  >
+    <div class="flex flex-col items-start gap-7 md:gap-8 font-[Helvetica]">
+      <div class="flex flex-col items-start">
+        <span
+          class="lg:text-[60px] mdl:text-6xl md:text-5xl text-4xl font-medium leading-none text-normal"
+          >Tomo Extension</span
+        >
+      </div>
+      <div class="mdl:max-w-[454px] md:max-w-[300px] text-sm md:text-base">
+        Powerful multichain access, instant wallet setup with social accounts.
+      </div>
+      <a
+        href="https://chromewebstore.google.com/detail/tomo-wallet/pfccjkejcgoppjnllalolplgogenfojk"
+        target="_blank"
+        class="cursor-pointer bg-[#F21F7F] text-white p-3 px-4 rounded-lg text-center text-base"
+      >
+        Get Extension
+      </a>
+    </div>
+    <img src="/images/extension.png" class="md:max-w-[530px]" />
+  </CenterContainer>
+</main>

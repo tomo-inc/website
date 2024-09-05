@@ -26,6 +26,85 @@
 .looper__listInstance {
   display: flex;
   width: max-content;
-
   animation: none;
+}
+
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: calc(100% * 2);
+  animation: scroll-up 10s linear infinite;
+}
+
+.scroll-item {
+  width: 100%;
+  height: 375px;
+  box-sizing: border-box;
+}
+
+.scroll-image {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.transition-opacity {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.translate-y-0 {
+  transform: translateY(0);
+}
+
+.-translate-y-2 {
+  transform: translateY(-0.5rem); /* 0.5rem equals to 8px */
+}
+
+.vertical-marquee-container {
+  width: 150px;
+  height: 300px; /* Adjust based on your requirements */
+  overflow: hidden;
+  position: relative;
+}
+
+.vertical-marquee-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.marquee-image {
+  width: 100%;
+  height: auto;
 }

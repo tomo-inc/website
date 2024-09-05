@@ -1,0 +1,48 @@
+---
+import CenterContainer from "./centerContainer.astro";
+---
+
+<script>
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+  AOS.init({ duration: 1000 });
+</script>
+
+<div id="sdk-page"></div>
+<main
+  class="h-[unset] md:pt-32 pt-24 relative sm:bg-cover bg-background"
+  data-aos="fade-up"
+>
+  <CenterContainer
+    class="w-full flex flex-col-reverse md:mb-20 mb-10 mdl:flex-row justify-center gap-[48px] mdl:gap-10 lg:gap-[100px] items-center px-4"
+  >
+    <img class="md:max-w-[530px]" src="/images/tomo-sdk.png" />
+    <div class="flex flex-col items-start gap-7 md:gap-8 font-[Helvetica]">
+      <div class="flex flex-col items-start">
+        <span
+          class="lg:text-[60px] mdl:text-6xl md:text-5xl text-4xl font-medium leading-none text-normal"
+          >Tomo SDK Solutions</span
+        >
+      </div>
+      <div class="mdl:max-w-[500px] md:max-w-[300px] text-sm md:text-base">
+        Streamline wallet connections like never before with Tomo SDK—a
+        comprehensive solution crafted by developers, for developers.
+      </div>
+      <div class="flex flex-col md:flex-row gap-5">
+        <a
+          href="https://docs.tomo.inc/tomo.-inc/tomo-login-solution"
+          target="_blank"
+          class="cursor-pointer bg-primary text-white p-3 px-4 rounded-lg text-center text-base"
+        >
+          Tomo Connect SDK
+        </a>
+        <a
+          href="https://docs.tomo.inc/tomo.-inc/tomo-telegram-solution"
+          target="_blank"
+          class="cursor-pointer border border-primary text-primary p-3 px-4 rounded-lg text-center text-base"
+          >Tomo Telegram SDK
+        </a>
+      </div>
+    </div>
+  </CenterContainer>
+</main>

@@ -1,5 +1,5 @@
 ---
-import CenterContainer from "./centerContainer.astro";
+import { Investor } from "./react/investor";
 ---
 
 <script>
@@ -9,32 +9,9 @@ import CenterContainer from "./centerContainer.astro";
 </script>
 
 <div id="investors-page"></div>
-<main class="h-[unset] relative sm:bg-cover bg-background" data-aos="fade-up">
-  <CenterContainer class="w-full flex flex-col items-center md:flex px-4">
-    <div class="mt-[100px] md:mt-[180px] flex flex-col">
-      <div
-        class="text-center font-['PopinsSemiBold'] text-[28px] md:text-5xl leading-[120%] mb-4 md:mb-5"
-      >
-        Our Backers
-      </div>
-
-      <img
-        src="/images/partners-desktop.png"
-        alt=""
-        class="hidden md:block w-full md:w-[80%] mx-auto"
-      />
-      <div
-        class="bg-white flex flex-col w-full rounded-[12px] items-center md:hidden border border-solid border-[#EBECED] font-['PopinsMedium'] text-lg py-4"
-      >
-        <img src="/images/polychain.png" />
-        <div class="border-t-[1px] border-[#EBECED] pt-5">
-          <img
-            src="/images/partners-mobile.png"
-            alt=""
-            class="block md:hidden w-full md:w-[80%] mx-auto"
-          />
-        </div>
-      </div>
-    </div>
-  </CenterContainer>
+<main
+  class="h-[156px] mt-6 md:mt-[50px] relative sm:bg-cover bg-background pb-10 md:pb-32"
+  data-aos="fade-up"
+>
+  <Investor />
 </main>
