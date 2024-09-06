@@ -30,7 +30,7 @@ export const DownloadApp: React.FC<IProps> = ({ className }) => {
       </div>
 
       <ul
-        className={`absolute font-[Helvetica]  mt-6 text-base right-0  w-full text-black rounded-md transition-opacity duration-300 ease-in-out transform ${
+        className={`absolute font-[Helvetica] z-30  mt-6 text-base right-0  w-full text-black rounded-md transition-opacity duration-300 ease-in-out transform ${
           isOpen
             ? "opacity-100 visible translate-y-0"
             : "opacity-0 invisible -translate-y-2"
