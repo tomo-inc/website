@@ -9,7 +9,7 @@ export const RampNo: React.FC = () => {
       <a
         className="bg-[#F21F7F] w-[calc(100%-40px)] m-5 mb-8 rounded-lg px-4 py-2 text-white text-base text-center"
         target="_blank"
-        href={`https://t.me/sophieTest2_bot/test2?startapp=RAMP_${startapp}`}
+        href={`https://t.me/AlvinsDemoBot/alvinBot?startapp=RAMP_${startapp}`}
       >
         Back to TOMO Telegram Wallet
       </a>
