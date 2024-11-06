@@ -58,3 +58,13 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.PANSW_AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'us-west-1' 
         SOURCE_DIR: './dist' 
+        
+    - name: prod Invalidate CloudFront
+      if: github.ref == 'refs/heads/main'
+      uses: chetan/invalidate-cloudfront-action@v2
+      env:
+        DISTRIBUTION: EQBHVQZAL16L1
+        PATHS: '/*'
+        AWS_REGION: 'us-west-1'
+        AWS_ACCESS_KEY_ID: ${{ secrets.PANSW_AWS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.PANSW_AWS_SECRET_ACCESS_KEY }}
