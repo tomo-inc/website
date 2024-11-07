@@ -1,6 +1,8 @@
 ---
 import CenterContainer from "../components/centerContainer.astro";
 import { RampNo } from "../components/rampNoComp";
+import Layout from "../layouts/Layout.astro";
+
 // const urlParams = new URLSearchParams(window.location.search);
 // const startapp = urlParams.get("startapp");
 ---
@@ -11,8 +13,10 @@ import { RampNo } from "../components/rampNoComp";
   console.log(startapp, 111111); // 输出: RAMP_12345
 </script>
 
-<CenterContainer
-  class="mt-[50px] md:mt-[80px] flex flex-col font-['NeueHaas'] tracking-0.7"
->
-  <RampNo client:only />
-</CenterContainer>
+<Layout title="union">
+  <CenterContainer
+    class="mt-[50px] md:mt-[80px] flex flex-col font-['NeueHaas'] tracking-0.7"
+  >
+    <RampNo client:only />
+  </CenterContainer>
+</Layout>
