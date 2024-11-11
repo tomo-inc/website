@@ -2,14 +2,7 @@
 import CenterContainer from "../components/centerContainer.astro";
 import { RampNo } from "../components/rampNoComp";
 import Layout from "../layouts/Layout.astro";
-
 ---
-
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  const startapp = urlParams.get("startapp");
-  console.log(startapp, 111111); // 输出: RAMP_12345
-</script>
 
 <Layout title="union">
   <CenterContainer
