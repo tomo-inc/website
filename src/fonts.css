@@ -95,3 +95,8 @@
   font-family: "Helvetica";
   src: url("./fonts/HelveticaNeue.ttc") format("truetype");
 }
+
+@font-face {
+  font-family: "Switer";
+  src: url("./fonts/Switer-Regular.woff2") format("truetype");
+}
