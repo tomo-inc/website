@@ -37,7 +37,7 @@ module.exports = {
         gray: "#F9F9F9",
         black: "#000000",
         background: "rgba(252,239,235,0.8)",
-        primary: "#F21F7F",
+        primary: "#FE3C9C",
       },
       fontSize: {
         64: "64px",

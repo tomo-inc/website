@@ -63,7 +63,7 @@ export const DownloadApp: React.FC<IProps> = ({ className }) => {
       if (mobileOS.osType === "IOS") {
         return (
           <a
-            className="cursor-pointer font-[Helvetica] font-semibold  justify-center  bg-[#F21F7F] text-white text-base p-4 rounded-md w-44  text-center"
+            className="cursor-pointer font-[Helvetica] font-semibold  justify-center  bg-[#FE3C9C] text-white text-base p-4 rounded-md w-44  text-center"
             target="_blank"
             href="https://apps.apple.com/us/app/tomo-inc/id6468010287"
           >
@@ -74,7 +74,7 @@ export const DownloadApp: React.FC<IProps> = ({ className }) => {
         return (
           <div className="relative flex-1" ref={menuRef}>
             <div
-              className={`cursor-pointer font-[Helvetica] font-semibold  justify-center  bg-[#F21F7F] text-white text-base p-4 rounded-md w-44  text-center  ${className}`}
+              className={`cursor-pointer font-[Helvetica] font-semibold  justify-center  bg-[#FE3C9C] text-white text-base p-4 rounded-md w-44  text-center  ${className}`}
               onClick={() => setIsOpen(!isOpen)}
             >
               Download App
@@ -122,7 +122,7 @@ export const DownloadApp: React.FC<IProps> = ({ className }) => {
       return (
         <div className="relative flex-1" ref={menuRef}>
           <div
-            className={`cursor-pointer font-[Helvetica] font-semibold  justify-center  bg-[#F21F7F] text-white text-base p-4 rounded-md w-44  text-center  ${className}`}
+            className={`cursor-pointer font-[Helvetica] font-semibold  justify-center  bg-[#FE3C9C] text-white text-base p-4 rounded-md w-44  text-center  ${className}`}
             onClick={() => setIsOpen(!isOpen)}
           >
             Download App
