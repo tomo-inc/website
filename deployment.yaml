@@ -1,0 +1,51 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: tomo-website-dev
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: tomo-website-dev
+  name: tomo-website
+  labels:
+    app: tomo-website
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: tomo-website
+  template:
+    metadata:
+      labels:
+        app: tomo-website
+    spec:
+      containers:
+        - name: tomo-website
+          image: 172.31.20.22:80/tomo-inc/tomo-website:dev
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: "100m"  # 请求 200 毫核 CPU
+              memory: "200Mi"  # 请求 1024 MiB 内存
+            limits:
+              cpu: "500m"  # 限制 500 毫核 CPU
+              memory: "500Mi"  # 限制 2048 MiB 内存
+          ports:
+            - containerPort: 3000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: tomo-website-dev
+  name: tomo-website
+spec:
+  selector:
+    app: tomo-website
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+  type: NodePort
