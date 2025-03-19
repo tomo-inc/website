@@ -27,12 +27,19 @@ spec:
           imagePullPolicy: Always
           resources:
             requests:
-              cpu: "100m" # 请求 200 毫核 CPU
-              memory: "200Mi" # 请求 1024 MiB 内存
+              cpu: "100m"
+              memory: "200Mi"
             limits:
-              cpu: "500m" # 限制 500 毫核 CPU
-              memory: "500Mi" # 限制 2048 MiB 内存
-              nofile: 65535
+              cpu: "500m"
+              memory: "500Mi"
+          securityContext:
+            capabilities:
+              add:
+                - SYS_RESOURCE
+          lifecycle:
+            postStart:
+              exec:
+                command: ["/bin/sh", "-c", "ulimit -n 65535"]
           ports:
             - containerPort: 3000
 
