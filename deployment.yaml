@@ -41,7 +41,7 @@ spec:
               exec:
                 command: ["/bin/sh", "-c", "ulimit -n 65535"]
           ports:
-            - containerPort: 3000
+            - containerPort: 4321
 
 ---
 apiVersion: v1
